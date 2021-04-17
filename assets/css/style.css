@@ -6,7 +6,7 @@
  }
  
  body {
-     background-color: #343a40;
+     background-color: #3f4142;
      color: #fff;
      min-height: 100vh;
      margin: 0;
@@ -78,7 +78,7 @@
      text-transform: uppercase;
      font-weight: 400;
      color: #FFFFFF;
-     background-color: green;
+     background-color: rgb(219, 104, 10);
      text-align: center;
      position: relative;
  }
@@ -113,7 +113,7 @@
      position: relative;
      top: 70%;
      left: 50%;
-     transform: translate(-50%, 0px);
+     transform: translate(-50%, -1100px);
      /*set it later to -1000px add a class of show in js */
      color: #fff;
      background-color: rgba(0, 0, 0, 0.2);
@@ -128,7 +128,7 @@
      height: 30px;
      width: 100%;
      font-size: 10px;
-     background-color: rgb(201, 115, 115);
+     background-color: rgb(247, 159, 88);
      border-radius: 2px;
  }
  
@@ -145,4 +145,37 @@
  
  .text-box .btn {
      width: 100%;
+ }
+ 
+ .text-box .close {
+     cursor: pointer;
+     float: right;
+     text-align: center;
+ }
+ 
+ main {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 10px;
+ }
+ /*shrink images to fit in the grid columns*/
+ 
+ .box img {
+     width: 100%;
+     object-fit: cover;
+     height: 200px;
+ }
+ 
+ .box {
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+     border-radius: 8px;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+     transition: box-shadow 0.2s ease-out;
+ }
+ 
+ .box .active {
+     box-shadow: 0 0 10px 5px rgb(219, 104, 10);
  }

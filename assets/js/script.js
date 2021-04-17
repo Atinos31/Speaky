@@ -8,39 +8,35 @@ const closeBtn = document.getElementById('close');
 //create an array of data
 const data = [{
         image: 'assets/images/food.jpg',
-        text: 'I am Hungry'
+        text: "I'm Hungry "
     },
     {
         image: 'assets/images/drink.jpg',
-        text: "I am Thirsty"
-    },
-    {
-        image: 'assets/images/tired.jpg',
-        text: "I am tired"
-    },
-    {
-        image: 'assets/images/hurt.jpg',
-        text: "I'm Hurt"
+        text: "I'm Thirsty"
     },
     {
         image: 'assets/images/happy.jpg',
-        text: "I'm Happy"
-    },
-    {
-        image: 'assets/images/angry.jpg',
-        text: "I'm Angry"
+        text: " I'm Happy"
     },
     {
         image: 'assets/images/sad.jpg',
         text: "I'm Sad"
     },
     {
-        image: 'assets/images/scared.jpg',
-        text: "I'm Scared"
+        image: 'assets/images/tired.jpg',
+        text: "I'm Tired"
+    },
+    {
+        image: 'assets/images/angry.jpg',
+        text: "I'm Angry"
     },
     {
         image: 'assets/images/sick.jpg',
         text: "I feel Sick"
+    },
+    {
+        image: 'assets/images/hurt.jpg',
+        text: "I'm Hurt"
     },
     {
         image: 'assets/images/playground.jpg',
