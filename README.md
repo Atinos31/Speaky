@@ -1,9 +1,9 @@
 <h1 align="left">Speaky!</h1>
 interactive  Frontend Development Milestone Project 2.
 
-![display from differnt screen shots](assets/images/mockup2.png)
+![display from differnt screen shots](asets/images/)
 
-## [View the live project here.](https://atinos31.github.io/UGA_TOURS/)
+## [View the live project here.](https://atinos31.github.io/Speaky/)
 ---
 This is a text to speech application created mainly for non verbal children with learning diabilities.
 Its main goal is to help families to better understand the basic needs and feeling of their children in real thereby simplifying their daily lives.
@@ -62,7 +62,11 @@ Its main goal is to help families to better understand the basic needs and feeli
 ## Wireframes
 I used balsamiq to create the wireframes. 
 > there are some slight changes on the real site to improve the user experience
+<<<<<<< HEAD
 - ![Wireframes](assets/images/wireframe/wireframe2.pdf)
+=======
+- ![Wireframes](assets/images/wireframe2.pdf)
+>>>>>>> 45296da5d803e3ce88d840516a1f20053fe21430
 
 
 
@@ -154,18 +158,18 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/UGA_TOURS)
+1. Log in to GitHub and locate the [Speaky](https://atinos31.github.io/Speaky/)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://atinos31.github.io/UGA_TOURS/) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://atinos31.github.io/Speaky/) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/UGA_TOURS)
+1. Log in to GitHub and locate the [Speaky](https://atinos31.github.io/Speaky/)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 

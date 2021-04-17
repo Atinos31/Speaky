@@ -84,17 +84,17 @@ h2 {
     position: relative;
 }
 
-
-}
 @media all and (max-width:30em) {
     a.btn {
         display: block;
         margin: 0.4em auto;
     }
 }
+
 .btn:active {
     transform: scale(0.97);
 }
+
 .btn:focus,
 select:focus {
     outline: 0;
