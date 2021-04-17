@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -6,10 +7,95 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #343a40;
     color: #fafafa;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
-h1 .main-header {
+html {
+    scroll-behavior: smooth;
+    font-size: 1.2rem;
+}
+
+h1,
+h2 {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.header {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-comments {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.bg-landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+}
+
+.jumbotron {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: 80vh;
+    max-width: 45%;
+    border-radius: 10px;
+    padding: 3rem 1rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 150%;
+    box-shadow: 5px 5px 8px 0 #333;
+    bottom: 8px;
+    left: 20px;
+}
+
+.font-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 25px;
+    margin: 0 1px 1px 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #3369ff;
     text-align: center;
+    position: relative;
+}
+
+
+}
+@media all and (max-width:30em) {
+    a.btn {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+.btn:active {
+    transform: scale(0.97);
+}
+.btn:focus,
+select:focus {
+    outline: 0;
 }

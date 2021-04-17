@@ -39,8 +39,12 @@ const data = [{
         text: "I'm Scared"
     },
     {
-        image: 'assets/images/outside.jpg',
-        text: 'I Want To Go Outside'
+        image: 'assets/images/sick.jpg',
+        text: "I feel Sick"
+    },
+    {
+        image: 'assets/images/playground.jpg',
+        text: 'I Want To Go The Playground'
     },
     {
         image: 'assets/images/home.jpg',

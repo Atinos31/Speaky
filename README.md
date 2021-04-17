@@ -62,7 +62,7 @@ Its main goal is to help families to better understand the basic needs and feeli
 ## Wireframes
 I used balsamiq to create the wireframes. 
 > there are some slight changes on the real site to improve the user experience
-- ![Wireframes](assets/images/wireframe2.png)
+- ![Wireframes](assets/images/wireframe/wireframe2.pdf)
 
 
 
