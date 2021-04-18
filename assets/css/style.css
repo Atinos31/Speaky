@@ -1,181 +1,228 @@
- @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
- * {
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
- }
- 
- body {
-     background-color: #3f4142;
-     color: #fff;
-     min-height: 100vh;
-     margin: 0;
-     font-family: 'Lato', sans-serif;
- }
- 
- html {
-     scroll-behavior: smooth;
-     font-size: 1.2rem;
- }
- 
- h1,
- h2 {
-     font-family: 'Abril Fatface', sans-serif;
- }
- 
- .header {
-     position: fixed;
-     background-color: rgba(0, 0, 0, 0.3);
- }
- 
- .fa-comments {
-     font-size: 2.5rem;
-     font-weight: 500;
-     color: #fff;
- }
- 
- .bg-landing {
-     position: relative;
-     width: 100%;
-     height: 100vh;
-     background-image: url('../images/bg1.jpg');
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center center;
-     opacity: 0.8;
- }
- 
- .jumbotron {
-     position: absolute;
-     background-color: rgba(0, 0, 0, 0.5);
-     max-height: 80vh;
-     max-width: 45%;
-     border-radius: 10px;
-     padding: 3rem 1rem;
-     color: #fff;
-     font-weight: 400;
-     line-height: 150%;
-     box-shadow: 5px 5px 8px 0 #333;
-     bottom: 8px;
-     left: 20px;
- }
- 
- .font-container {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
- 
- .btn {
-     display: inline-block;
-     padding: 9px 25px;
-     margin: 0 1px 1px 0;
-     border-radius: 8px;
-     box-sizing: border-box;
-     text-decoration: none;
-     font-family: 'Roboto', sans-serif;
-     text-transform: uppercase;
-     font-weight: 400;
-     color: #FFFFFF;
-     background-color: rgb(219, 104, 10);
-     text-align: center;
-     position: relative;
- }
- 
- @media all and (max-width:30em) {
-     a.btn {
-         display: block;
-         margin: 0.4em auto;
-     }
- }
- 
- .btn:active,
- .btn:hover {
-     transform: scale(0.97);
-     opacity: 0.5;
-     color: #fff;
- }
- 
- .btn:focus,
- select:focus {
-     outline: 0;
- }
- 
- .btn-toggle {
-     display: block;
-     margin: auto;
-     margin-bottom: 20px;
- }
- 
- .text-box {
-     width: 70%;
-     position: relative;
-     top: 70%;
-     left: 50%;
-     transform: translate(-50%, -1100px);
-     /*set it later to -1000px add a class of show in js */
-     color: #fff;
-     background-color: rgba(0, 0, 0, 0.2);
-     padding: 20px;
-     transition: all 1s ease-in-out;
-     border-radius: 8px;
- }
- 
- .text-box select {
-     border: 0;
-     color: #fff;
-     height: 30px;
-     width: 100%;
-     font-size: 10px;
-     background-color: rgb(247, 159, 88);
-     border-radius: 2px;
- }
- 
- .text-box textarea {
-     width: 100%;
-     height: 150px;
-     border: 1px #aaa solid;
-     background: #fafafa;
-     border-radius: 8px;
-     font-size: 16px;
-     padding: 8px;
-     margin: 14px 0;
- }
- 
- .text-box .btn {
-     width: 100%;
- }
- 
- .text-box .close {
-     cursor: pointer;
-     float: right;
-     text-align: center;
- }
- 
- main {
-     display: grid;
-     grid-template-columns: repeat(4, 1fr);
-     grid-gap: 10px;
- }
- /*shrink images to fit in the grid columns*/
- 
- .box img {
-     width: 100%;
-     object-fit: cover;
-     height: 200px;
- }
- 
- .box {
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
-     border-radius: 8px;
-     cursor: pointer;
-     display: flex;
-     flex-direction: column;
-     overflow: hidden;
-     transition: box-shadow 0.2s ease-out;
- }
- 
- .box .active {
-     box-shadow: 0 0 10px 5px rgb(219, 104, 10);
- }
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3f4142;
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 1.2rem;
+}
+
+h1,
+h2 {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.header {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fa-comments {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.bg-landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: 80vh;
+    max-width: 50%;
+    border-radius: 10px;
+    padding: 3rem 1rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 150%;
+    box-shadow: 5px 5px 8px 0 #333;
+    bottom: 15px;
+    left: 20px;
+}
+
+.font-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 9px 25px;
+    margin: 0 1px 1px 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: rgb(219, 104, 10);
+    text-align: center;
+    position: relative;
+}
+
+@media all and (max-width:30em) {
+    btn {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+.btn:active,
+.btn:hover {
+    transform: scale(0.97);
+    opacity: 0.5;
+    color: #fff;
+}
+
+.btn:focus,
+select:focus {
+    outline: 0;
+}
+
+.btn-toggle {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.text-box {
+    width: 70%;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -500px);
+    /*set it later to -1000px add a class of show in js */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: all 1s ease-in-out;
+    border-radius: 8px;
+}
+
+.text-box select {
+    border: 0;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+    font-size: 10px;
+    background-color: rgb(247, 159, 88);
+    border-radius: 2px;
+}
+
+.text-box textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px #aaa solid;
+    background: #fafafa;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 8px;
+    margin: 14px 0;
+}
+
+.text-box .btn {
+    width: 100%;
+}
+
+.text-box .close {
+    cursor: pointer;
+    float: right;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+
+/*shrink images to fit in the grid columns*/
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.box {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease-out;
+}
+
+.box .active {
+    box-shadow: 0 0 10px 5px rgb(219, 63, 2);
+}
+
+.box .info {
+    background-color: rgb(136, 63, 2);
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+}
+
+
+/* media queries*/
+
+@media(max-width:1100px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:4800px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .jumbotron {
+        min-width: 55%;
+    }
+    .jumbotron h2 {
+        font-size: 30px;
+    }
+    .btn {
+        display: block;
+        margin: 0.4em auto;
+        font-size: 15px;
+    }
+}
