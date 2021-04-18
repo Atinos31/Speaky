@@ -5,7 +5,7 @@ const readBtn = document.getElementById('read');
 const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
 
-//create an array of data
+//creating an array of data to add images
 const data = [{
         image: 'assets/images/food.jpg',
         text: "I'm Hungry "

@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+
+/*GLOBAL STYLES*/
+
 body {
     background-color: #3f4142;
     color: #fff;
@@ -25,13 +28,15 @@ h2 {
 
 .header {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #333;
+    box-shadow: 5px 5px 8px 0 #333;
 }
 
 .fa-comments {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 800;
     color: #fff;
+    z-index: 100;
 }
 
 .bg-landing {
@@ -44,6 +49,7 @@ h2 {
     background-position: center center;
     opacity: 0.8;
     margin-bottom: 10px;
+    z-index: -1;
 }
 
 .jumbotron {
@@ -161,7 +167,7 @@ main {
 }
 
 
-/*shrink images to fit in the grid columns*/
+/*shrinking images to fit in the four grid column boxes*/
 
 .box img {
     width: 100%;
@@ -210,7 +216,7 @@ main {
     }
 }
 
-@media(max-width:4800px) {
+@media(max-width:480px) {
     main {
         grid-template-columns: 1fr;
     }
