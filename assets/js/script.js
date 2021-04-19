@@ -80,7 +80,7 @@ function createBox(item) {
         //addition for active effect to the image box
         box.classList.add('active');
         //remove the  active class right after 
-        setTimeout(() => box.classList.remove('active'), 800);
+        setTimeout(() => box.classList.remove('active'), 1000);
 
     });
     main.appendChild(box);

@@ -154,10 +154,14 @@
         flex-direction: column;
         overflow: hidden;
         transition: box-shadow 0.2s ease-out;
+        transition: transform 0.25s ease;
+        cursor: zoom-in;
     }
     
     .box.active {
-        box-shadow: 0 0 10px 8px rgb(150, 182, 10);
+        box-shadow: 0 0 5px 4px rgb(243, 181, 10);
+        transform: scale(1.2);
+        cursor: zoom-out;
     }
     
     .box .info {
