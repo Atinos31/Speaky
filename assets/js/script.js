@@ -74,3 +74,13 @@ function createBox(item) {
     // speak event
     main.appendChild(box);
 }
+
+//toggle text box to show toggleBtn
+toggleBtn.addEventListener('click', () =>
+    document.getElementById('text-box').classList.toggle('show')
+);
+
+// Close button
+closeBtn.addEventListener('click', () =>
+    document.getElementById('text-box').classList.remove('show')
+);
