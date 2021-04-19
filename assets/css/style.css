@@ -193,4 +193,18 @@
             margin: 0.4em auto;
             font-size: 15px;
         }
+        h1 {
+            font-size: 25px;
+        }
+        .btn {
+            border-radius: 50px;
+        }
+        .text-box {
+            min-width: 80%;
+            background-color: rgba(0, 0, 0, 0.7);
+            top: 8%;
+        }
+        .social-links {
+            display: none;
+        }
     }
