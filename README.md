@@ -79,7 +79,8 @@ I used balsamiq to create the wireframes.
  * fonts used are Roboto for headings and Open sans for paragraghs.
         - 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap">
+
 ```
 
 ### Images
@@ -208,7 +209,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -    [W3schhool](https://www.w3schools.com/default.asp)
 
--    [StackOverflow posts](https://stackoverflow.com)
+-    [StackOverflow posts](https://stackoverflow.com) 
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
