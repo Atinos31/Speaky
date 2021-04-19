@@ -1,6 +1,6 @@
 const main = document.querySelector('main');
 const voiceSelect = document.getElementById('voices');
-const textArea = document.getElementById('text');
+const textarea = document.getElementById('text');
 const readBtn = document.getElementById('read');
 const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
@@ -100,8 +100,6 @@ function getVoices() {
         const option = document.createElement('option');
 
         option.value = voice.name;
-
-
         option.innerText = `${voice.name} ${voice.lang}`;
         voiceSelect.appendChild(option);
     });
@@ -130,6 +128,12 @@ closeBtn.addEventListener('click', () =>
     document.getElementById('text-box').classList.remove('show')
 );
 
+//read button functionality
+readBtn.addEventListener('click', () => {
+    setTextMessage(textarea.value);
+    speakText();
+
+});
 
 //getVoices function called
 getVoices();
