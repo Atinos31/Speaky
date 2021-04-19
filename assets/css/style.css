@@ -89,7 +89,7 @@
         bottom: 40%;
         left: 50%;
         transform: translate(-50%, -500px);
-        /*set it later to 0px on the  y-axis and  add a class of show in js */
+        /*set it later to 10px on the  y-axis and  add a class of show in js */
         color: #fff;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 20px;
@@ -98,7 +98,7 @@
     }
     
     .text-box.show {
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 10%);
     }
     
     .text-box select {
@@ -130,6 +130,7 @@
         cursor: pointer;
         float: right;
         text-align: center;
+        color: #fff;
     }
     
     main {
@@ -147,7 +148,7 @@
     
     .box {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
-        border-radius: 8px;
+        border-radius: 12px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -166,7 +167,7 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         margin: 0;
-        padding: 8px;
+        padding: 12px;
         text-align: center;
     }
     /* media queries*/
@@ -186,12 +187,6 @@
     @media(max-width:480px) {
         main {
             grid-template-columns: 1fr;
-        }
-        .jumbotron {
-            min-width: 55%;
-        }
-        .jumbotron h2 {
-            font-size: 30px;
         }
         .btn {
             display: block;

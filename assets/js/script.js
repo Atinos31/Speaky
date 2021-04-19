@@ -74,8 +74,33 @@ function createBox(item) {
     // speak event
     main.appendChild(box);
 }
+// Initiate speech synth
+const message = new SpeechSynthesisUtterance();
+// Store voices
 
-//toggle text box to show toggleBtn
+// array  to store voices from speech synthesis api
+let voices = [];
+
+function getVoices() {
+    voices = speechSynthesis.getVoices();
+
+    //loop through voices
+    voices.forEach(voice => {
+        const option = document.createElement('option');
+
+        option.value = voice.name;
+
+        option.innerText = `${voice.name} ${voice.lang}`;
+        voiceSelect.appendChild(option);
+    });
+}
+
+//when voices are changed
+speechSynthesis.addEventListener('voiceschanged', getVoices);
+
+
+
+//toggle text box functionality
 toggleBtn.addEventListener('click', () =>
     document.getElementById('text-box').classList.toggle('show')
 );
@@ -84,3 +109,7 @@ toggleBtn.addEventListener('click', () =>
 closeBtn.addEventListener('click', () =>
     document.getElementById('text-box').classList.remove('show')
 );
+
+
+//getVoices function called
+getVoices();
