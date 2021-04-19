@@ -40,7 +40,7 @@ const data = [{
     },
     {
         image: 'assets/images/playground.jpg',
-        text: 'I Want To Go The Playground'
+        text: 'I Want To Go To The Playground'
     },
     {
         image: 'assets/images/home.jpg',
@@ -71,12 +71,23 @@ function createBox(item) {
     box.innerHTML = `
     <img src="${image}" alt="${text}" />
     <p class="info">${text}</p>`;
-    // speak event
+
+    // addition of speak event
+    box.addEventListener('click', () => {
+        setTextMessage(text);
+        speakText();
+
+        //addition for active effect to the image box
+        box.classList.add('active');
+        //remove the  active class right after 
+        setTimeout(() => box.classList.remove('active'), 800);
+
+    });
     main.appendChild(box);
 }
-// Initiate speech synth
+// Initiate speech synthesis
 const message = new SpeechSynthesisUtterance();
-// Store voices
+
 
 // array  to store voices from speech synthesis api
 let voices = [];
@@ -90,11 +101,20 @@ function getVoices() {
 
         option.value = voice.name;
 
+
         option.innerText = `${voice.name} ${voice.lang}`;
         voiceSelect.appendChild(option);
     });
 }
+// setting the text function
+function setTextMessage(text) {
+    message.text = text;
+}
 
+// text to be spoken
+function speakText() {
+    speechSynthesis.speak(message);
+}
 //when voices are changed
 speechSynthesis.addEventListener('voiceschanged', getVoices);
 

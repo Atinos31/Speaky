@@ -156,8 +156,8 @@
         transition: box-shadow 0.2s ease-out;
     }
     
-    .box .active {
-        box-shadow: 0 0 10px 5px rgb(35, 105, 14);
+    .box.active {
+        box-shadow: 0 0 10px 8px rgb(150, 182, 10);
     }
     
     .box .info {
