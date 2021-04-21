@@ -153,31 +153,42 @@ select:focus {
 /* type area */
 
 .type-area {
-    padding: 50px 0px;
+    padding: 15px 0px;
     text-align: center;
-    color: #fff;
-    background: rgba(0, 0, 20, 0.8);
+    color: #333;
+    background: rgb(226, 222, 222);
     margin-top: 0;
 }
 
 .txt-box {
-    background: #f4f4fa;
-    min-width: 80%;
+    background: rgba(0, 0, 0, 0.9);
+    width: 80%;
     border-radius: 10px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
     outline: 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
 }
 
 
 /*style speak button*/
 
 .ripple {
-    background: darkgreen;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 20px 30px;
+    background: #e84d1d;
     color: #fff;
-    border: 1px solid green;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    transition: .6s;
     letter-spacing: 2px;
-    padding: 12px 28px;
-    overflow: hidden;
 }
 
 main {
