@@ -5,8 +5,11 @@ const readBtn = document.getElementById('read');
 const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
 
-const textInput = document.getElementById('textInput');
+// second  text area and speak button
+const textArea = document.getElementById('textInput');
 const speakBtn = document.getElementById('speakBtn')
+
+//const tts = window.speechSynthesis;
 
 //creating an array of data to add images
 const data = [{
@@ -67,7 +70,7 @@ data.forEach(createBox);
 function createBox(item) {
     const box = document.createElement('div');
 
-    //pull image from the text and the item
+    //put image and text to create an item
     const { image, text } = item;
 
     box.classList.add('box');
@@ -80,9 +83,9 @@ function createBox(item) {
         setTextMessage(text);
         speakText();
 
-        //addition for active effect to the image box
+        //adding active effect to the image box
         box.classList.add('active');
-        //remove the  active class right after 
+        //remove the  active class right after it been clicked or used
         setTimeout(() => box.classList.remove('active'), 1000);
 
     });
@@ -97,6 +100,8 @@ let voices = [];
 
 function getVoices() {
     voices = speechSynthesis.getVoices();
+
+
 
     //loop through voices
     voices.forEach(voice => {
@@ -119,7 +124,7 @@ function speakText() {
 //when voices are changed
 speechSynthesis.addEventListener('voiceschanged', getVoices);
 
-
+// add event listener tp speak button
 
 //toggle text box functionality
 toggleBtn.addEventListener('click', () =>
@@ -138,7 +143,7 @@ readBtn.addEventListener('click', () => {
 
 });
 speakBtn.addEventListener('click', () => {
-    setTextMessage(textarea.value);
+    setTextMessage(textArea.value);
     speakText();
 
 });
