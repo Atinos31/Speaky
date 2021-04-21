@@ -35,7 +35,7 @@
     
     .header {
         position: sticky;
-        box-shadow: 5px 5px 8px 0 #d4d4d4;
+        box-shadow: 5px 5px 8px 0 #222;
         height: 80vh;
         width: 100%;
         background-image: url('../images/bg1.jpg');
