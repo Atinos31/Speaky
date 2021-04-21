@@ -215,9 +215,6 @@
         }
         
         .box.active {
-            /*box-shadow: 0 0 5px 4px rgb(243, 181, 10);
-        //transform: scale(1.2);
-        cursor: zoom-out;*/
             color: #fff;
             background: green;
             box-shadow: 0 0 0 5px #fff, 0 0 0 10px rgb(200, 247, 73);
