@@ -5,6 +5,9 @@ const readBtn = document.getElementById('read');
 const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
 
+const textInput = document.getElementById('textInput');
+const speakBtn = document.getElementById('speakBtn')
+
 //creating an array of data to add images
 const data = [{
         image: 'assets/images/food.jpg',
@@ -130,6 +133,11 @@ closeBtn.addEventListener('click', () =>
 
 //read button functionality
 readBtn.addEventListener('click', () => {
+    setTextMessage(textarea.value);
+    speakText();
+
+});
+speakBtn.addEventListener('click', () => {
     setTextMessage(textarea.value);
     speakText();
 
