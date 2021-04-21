@@ -151,7 +151,6 @@
         .textarea {}
         
         .txt-box {
-            min-width: 60%;
             color: #fff;
             background-color: rgba(0, 0, 0, 0.8);
             border-radius: 8px;
