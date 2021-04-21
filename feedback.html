@@ -17,6 +17,12 @@
     <link rel="apple-touch-icon" href="/example.png">
     <title>Text to Speech app</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_ypk2G1kkPoxjbWEmsTwIy");
+        })();
+    </script>
 </head>
 
 <body>
@@ -28,62 +34,68 @@
             </span>
         </h1>
     </div>
-    <div class="container">
-        <form action="">
-            <h1>Give Your feedback</h1>
-            <div class="user">
-                <input type="text" placeholder="full names">
-                <i class="far fa-user"></i>
-            </div>
-            <div class="id">
-                <input type="email" placeholder="email..."> <i class="fas fa-envelope"></i>
-            </div>
-            <textarea name="" id="" cols="15" rows="5" placeholder="please write your opinions here and let us know what could make it better."></textarea> <button>send</button>
+
+    <section class="feedback-container">
+        <div class="center-form">
+            <form onsubmit="return sendMail(this);" method="POST">
+                <h3 class="contact-heading uppercase text-center">Got some feedback?</h3>
+                <h5 class="uppercase text-center">please let us know</h5>
+        </div>
+        <div class="user">
+            <input type="text" placeholder="Full Names" /></div>
+        <div class="id">
+            <input type="email" placeholder="Email Address" /></i>
+        </div>
+        <textarea rows="5" cols="15" name=" feedbacksummary " class="form-control " id="projectsummary " placeholder="Please write yor opinions here " required></textarea>
+        <button type="submit " class="btn btn-secondary center-block ">Send feedback</button>
         </form>
-    </div>
-    <section class="footer text text-center">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <i class="far fa-comments fa-2X"></i>
+        </div>
+        </div>
+    </section>
+    <section class="footer text text-center ">
+        <div class="row ">
+            <div class="col-12 col-md-4 ">
+                <i class="far fa-comments fa-2X "></i>
             </div>
-            <div class=" col-12 col-md-4">
+            <div class=" col-12 col-md-4 ">
 
 
-                <div class="social-links">
+                <div class="social-links ">
 
-                    <a href="https://www.linkedin.com/in/sandra-atino-459a231a9/" target="_blank" rel="noopener" aria-label="opens linkedin page in a new tab">
-                        <i class="fab fa-linkedin-in  fa-2x  hvr-pulse-grow ">
+                    <a href="https://www.linkedin.com/in/sandra-atino-459a231a9/ " target="_blank " rel="noopener " aria-label="opens linkedin page in a new tab ">
+                        <i class="fab fa-linkedin-in fa-2x hvr-pulse-grow ">
                 
                 </i></a>
-                    <a href="https://www.youtube.com/watch?v=P6qlAvFSH10" target="_blank" rel="noopener" aria-label="opens youtube page in a new tab">
-                        <i class="fab fa-youtube fa-2x hvr-pulse-grow">
+                    <a href="https://www.youtube.com/watch?v=P6qlAvFSH10 " target="_blank " rel="noopener " aria-label="opens youtube page in a new tab ">
+                        <i class="fab fa-youtube fa-2x hvr-pulse-grow ">
                   </i>
                     </a>
 
-                    <a href="https://github.com/Atinos31" target="_blank" rel="noopener" aria-label="opens github page in a new tab">
-                        <i class="fab fa-github fa-2x hvr-pulse-grow">
+                    <a href="https://github.com/Atinos31 " target="_blank " rel="noopener " aria-label="opens github page in a new tab ">
+                        <i class="fab fa-github fa-2x hvr-pulse-grow ">
                   </i>
                     </a>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
-                <div class="feedback-form">
-                    <a href="index.html"> Home <i class="fas fa-hand-point-left"></i></a>
+            <div class="col-12 col-md-4 ">
+                <div class="feedback-form ">
+                    <a href="index.html "> Home <i class="fas fa-hand-point-left "></i></a>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <hr class="footer-divider">
-    <div class="copyright text-center">
+    <hr class="footer-divider ">
+    <div class="copyright text-center ">
         <small>Copyright &copy;2021 
-              <a class="hvr-grow" style="color: #e84610;" href="https://github.com/Atinos31" target="_blank" rel="noopener">atinos31
+              <a class="hvr-grow " style="color: #e84610; " href="https://github.com/Atinos31 " target="_blank " rel="noopener ">atinos31
               </a> | All rights reserved.
             </small>
     </div>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js "></script>
+    <script src="assets/js/sendEmail.js "></script>
 </body>
 
 </html>
