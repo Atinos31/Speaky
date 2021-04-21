@@ -85,7 +85,7 @@
     }
     
     .btn-toggle {
-        display: inline-block;
+        display: block;
         float: right;
         margin: 0;
         top: 2px;
