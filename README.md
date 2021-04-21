@@ -79,7 +79,8 @@ I used balsamiq to create the wireframes.
  * fonts used are Roboto for headings and Open sans for paragraghs.
         - 
 ```html
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap">
+
 ```
 
 ### Images
@@ -158,24 +159,24 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [Speaky](https://atinos31.github.io/Speaky/)
+1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://atinos31.github.io/Speaky/) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://github.com/Atinos31/Speaky) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [Speaky](https://atinos31.github.io/Speaky/)
+1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/UGA_TOURS)
+1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -208,7 +209,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -    [W3schhool](https://www.w3schools.com/default.asp)
 
--    [StackOverflow posts](https://stackoverflow.com)
+-    [StackOverflow posts](https://stackoverflow.com) 
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
