@@ -16,6 +16,7 @@
     <link rel="dns-prefetch" href="https://example.com">
     <link rel="apple-touch-icon" href="/example.png">
     <title>Text to Speech app</title>
+    <link rel="stylesheet" href="assets/css/feedback.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
     <script type="text/javascript">
@@ -26,31 +27,32 @@
 </head>
 
 <body>
-    <div class="col-12 feedback">
+    <div class="col-12 feedback m-0">
         <h1>
             <span class="logo">
               <a href="index.html" class="">
            <i class="far fa-comments"></i></a>
             </span>
         </h1>
+        <h3 class="feedback-heading uppercase text-center">Got some feedback?</h3>
+        <h5 class="uppercase text-center">Please let us know</h5>
     </div>
 
-    <section class="feedback-container">
-        <div class="center-form">
-            <form onsubmit="return sendMail(this);" method="POST">
-                <h3 class="contact-heading uppercase text-center">Got some feedback?</h3>
-                <h5 class="uppercase text-center">please let us know</h5>
-        </div>
-        <div class="user">
-            <input type="text" placeholder="Full Names" /></div>
-        <div class="id">
-            <input type="email" placeholder="Email Address" /></i>
-        </div>
-        <textarea rows="5" cols="15" name=" feedbacksummary " class="form-control " id="projectsummary " placeholder="Please write yor opinions here " required></textarea>
-        <button type="submit " class="btn btn-secondary center-block ">Send feedback</button>
+    <section class="container">
+        <form onsubmit="return sendMail(this); " method="POST ">
+
+            <div class="form-control">
+                <input type="text" required/>
+                <label>Name</label></div>
+            <div class="form-control">
+                <input type="text" required/>
+                <label>Email Address</label>
+            </div><textarea rows="5 " name="feedbacksummary " class="form-control " id="projectsummary " placeholder="Project Description " required></textarea>
+            <button type="submit " class=" btn-secondary center-block ">Send feedback</button>
         </form>
         </div>
         </div>
+
     </section>
     <section class="footer text text-center ">
         <div class="row ">

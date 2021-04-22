@@ -1,303 +1,285 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-/*GLOBAL STYLES*/
-
-body {
-    background-color: #f6f8f5;
-    color: #333;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-    font-size: 1.2rem;
-}
-
-h1 {
-    font-family: 'Abril Fatface', sans-serif;
-    font-weight: 800;
-    letter-spacing: 1px;
-    position: relative;
-    color: #000;
-    margin-bottom: 5px;
-}
-
-h2 {
-    font-family: 'Abril Fatface', sans-serif;
-    ;
-}
-
-.header {
-    position: sticky;
-    box-shadow: 5px 5px 8px 0 #222;
-    height: 80vh;
-    width: 100%;
-    background-image: url('../images/bg1.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 0.8;
-}
-
-.fa-comments {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #000;
-    z-index: 100;
-    cursor: pointer;
-}
-
-.fa-comments:hover {
-    color: orangered;
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.btn {
-    cursor: pointer;
-    background-color: darkgreen;
-    border-radius: 12px;
-    color: #fff;
-    font-size: 18px;
-    padding: 14px 30px;
-    text-transform: capitalize;
-    z-index: 999;
-}
-
-.btn:active {
-    transform: scale(0.99);
-    opacity: 0.5;
-    color: #fff;
-}
-
-.btn:focus,
-select:focus {
-    outline: 0;
-}
-
-.btn:hover {
-    text-decoration: none;
-    color: #fff;
-    background: green;
-    box-shadow: 0 0 0 5px #fff, 0 0 0 10px green;
-}
-
-.btn-toggle {
-    display: block;
-    float: right;
-    margin: 0;
-    top: 2px;
-    right: 5px;
-    position: absolute;
-}
-
-.text-box {
-    max-width: 70%;
-    position: absolute;
-    bottom: 40%;
-    left: 50%;
-    transform: translate(-50%, -500px);
-    /*set it later to 10px on the  y-axis and  add a class of show in js */
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    transition: all 1s ease-in-out;
-    border-radius: 8px;
-}
-
-.text-box.show {
-    transform: translate(-50%, 10%);
-}
-
-.text-box select {
-    border: 0;
-    color: #fff;
-    height: 30px;
-    width: 100%;
-    font-size: 12px;
-    background-color: rgb(105, 175, 117);
-    border-radius: 2px;
-}
-
-.text-box textarea {
-    width: 100%;
-    height: 150px;
-    border: 1px #eee solid;
-    background: #fafafa;
-    border-radius: 8px;
-    font-size: 16px;
-    padding: 8px;
-    margin: 14px 0;
-}
-
-.text-box .btn {
-    width: 100%;
-}
-
-.text-box .close {
-    cursor: pointer;
-    float: right;
-    text-align: center;
-    color: #fff;
-}
-
-
-/* type area */
-
-.type-area {
-    padding: 15px 0px;
-    text-align: center;
-    color: #333;
-    background: rgb(226, 222, 222);
-    margin-top: 0;
-}
-
-.txt-box {
-    background: rgba(0, 0, 0, 0.9);
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
-    outline: 0;
-    position: relative;
-    color: #fff;
-    text-align: center;
-}
-
-
-/* speak button*/
-
-.speakBtn {
-    position: relative;
-    top: -25px;
-    right: -5px;
-    font-weight: 600;
-    padding: 15px 30px;
-    background: darkgreen;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-    transition: .6s;
-    letter-spacing: 2px;
-    outline: 0;
-}
-
-.speakBtn:hover {
-    color: #fff;
-    background: green;
-    box-shadow: 0 0 0 5px #fff, 0 0 0 10px green;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-}
-
-
-/*shrinking images to fit in the four grid column boxes*/
-
-.box img {
-    width: 100%;
-    object-fit: cover;
-    height: 200px;
-}
-
-.box {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
-    border-radius: 12px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: box-shadow 0.4s ease-out;
-    cursor: pointer;
-}
-
-.box.active {
-    color: #fff;
-    background: green;
-    box-shadow: 0 0 0 5px #fff, 0 0 0 10px rgb(200, 247, 73);
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.box .info {
-    background-color: rgb(5, 88, 9);
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 12px;
-    text-align: center;
-}
-
-
-/* feedback  page*/
-
-.feedback {
-    display: flex;
-    min-height: 100vh;
-}
-
-
-/* media queries*/
-
-@media(max-width: 1100px) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media(max-width:768px) {
-    main {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .speakBtn {
-        display: inline-block;
-        top: 0;
-        right: 0;
-    }
-    .type-area {
-        text-align: center;
-    }
-}
-
-@media(max-width:480px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-    .btn {
-        display: block;
-        margin: 1px auto;
-        font-size: 15px;
-    }
-    h1 {
-        font-size: 25px;
-    }
-    .btn {
-        border-radius: 50px;
-    }
-    .text-box {
-        min-width: 80%;
-        background-color: rgba(0, 0, 0, 0.7);
-        top: 8%;
-    }
-    .social-links {
-        display: none;
-    }
-    .speakBtn {
-        display: inline-block;
-        top: 0;
-        right: 0;
-    }
-}
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ /*GLOBAL STYLES*/
+ 
+ body {
+     background-color: #f6f8f5;
+     color: #333;
+     min-height: 100vh;
+     margin: 0;
+     font-family: 'Lato', sans-serif;
+ }
+ 
+ html {
+     scroll-behavior: smooth;
+     font-size: 1.2rem;
+ }
+ 
+ h1 {
+     font-family: 'Abril Fatface', sans-serif;
+     font-weight: 800;
+     letter-spacing: 1px;
+     position: relative;
+     color: #000;
+     margin-bottom: 5px;
+ }
+ 
+ h2 {
+     font-family: 'Abril Fatface', sans-serif;
+     ;
+ }
+ 
+ .header {
+     position: sticky;
+     box-shadow: 5px 5px 8px 0 #222;
+     height: 80vh;
+     width: 100%;
+     background-image: url('../images/bg1.jpg');
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     opacity: 0.8;
+ }
+ 
+ .fa-comments {
+     font-size: 2.5rem;
+     font-weight: 800;
+     color: #000;
+     z-index: 100;
+     cursor: pointer;
+ }
+ 
+ .fa-comments:hover {
+     color: orangered;
+     transform: scale(1.2);
+     cursor: pointer;
+ }
+ 
+ .btn {
+     cursor: pointer;
+     background-color: darkgreen;
+     border-radius: 12px;
+     color: #fff;
+     font-size: 18px;
+     padding: 14px 30px;
+     text-transform: capitalize;
+     z-index: 999;
+ }
+ 
+ .btn:active {
+     transform: scale(0.99);
+     opacity: 0.5;
+     color: #fff;
+ }
+ 
+ .btn:focus,
+ select:focus {
+     outline: 0;
+ }
+ 
+ .btn:hover {
+     text-decoration: none;
+     color: #fff;
+     background: green;
+     box-shadow: 0 0 0 5px #fff, 0 0 0 10px green;
+ }
+ 
+ .btn-toggle {
+     display: block;
+     float: right;
+     margin: 0;
+     top: 2px;
+     right: 5px;
+     position: absolute;
+ }
+ 
+ .text-box {
+     max-width: 70%;
+     position: absolute;
+     bottom: 40%;
+     left: 50%;
+     transform: translate(-50%, -500px);
+     /*set it later to 10px on the  y-axis and  add a class of show in js */
+     color: #fff;
+     background-color: rgba(0, 0, 0, 0.9);
+     padding: 20px;
+     transition: all 1s ease-in-out;
+     border-radius: 8px;
+ }
+ 
+ .text-box.show {
+     transform: translate(-50%, 10%);
+ }
+ 
+ .text-box select {
+     border: 0;
+     color: #fff;
+     height: 30px;
+     width: 100%;
+     font-size: 12px;
+     background-color: rgb(105, 175, 117);
+     border-radius: 2px;
+ }
+ 
+ .text-box textarea {
+     width: 100%;
+     height: 150px;
+     border: 1px #eee solid;
+     background: #fafafa;
+     border-radius: 8px;
+     font-size: 16px;
+     padding: 8px;
+     margin: 14px 0;
+ }
+ 
+ .text-box .btn {
+     width: 100%;
+ }
+ 
+ .text-box .close {
+     cursor: pointer;
+     float: right;
+     text-align: center;
+     color: #fff;
+ }
+ /* type area */
+ 
+ .type-area {
+     padding: 15px 0px;
+     text-align: center;
+     color: #333;
+     background: rgb(226, 222, 222);
+     margin-top: 0;
+ }
+ 
+ .txt-box {
+     background: rgba(0, 0, 0, 0.9);
+     width: 80%;
+     border-radius: 10px;
+     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+     outline: 0;
+     position: relative;
+     color: #fff;
+     text-align: center;
+ }
+ /* speak button*/
+ 
+ .speakBtn {
+     position: relative;
+     top: -25px;
+     right: -5px;
+     font-weight: 600;
+     padding: 15px 30px;
+     background: darkgreen;
+     color: #fff;
+     border: 1px solid #fff;
+     border-radius: 8px;
+     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+     transition: .6s;
+     letter-spacing: 2px;
+     outline: 0;
+ }
+ 
+ .speakBtn:hover {
+     color: #fff;
+     background: green;
+     box-shadow: 0 0 0 5px #fff, 0 0 0 10px green;
+ }
+ 
+ main {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 10px;
+ }
+ /*shrinking images to fit in the four grid column boxes*/
+ 
+ .box img {
+     width: 100%;
+     object-fit: cover;
+     height: 200px;
+ }
+ 
+ .box {
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+     border-radius: 12px;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+     transition: box-shadow 0.4s ease-out;
+     cursor: pointer;
+ }
+ 
+ .box.active {
+     color: #fff;
+     background: green;
+     box-shadow: 0 0 0 5px #fff, 0 0 0 10px rgb(200, 247, 73);
+     transform: scale(1.1);
+     cursor: pointer;
+ }
+ 
+ .box .info {
+     background-color: rgb(5, 88, 9);
+     color: #fff;
+     font-size: 16px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     margin: 0;
+     padding: 12px;
+     text-align: center;
+ }
+ /* media queries*/
+ 
+ @media(max-width: 1100px) {
+     main {
+         grid-template-columns: repeat(3, 1fr);
+     }
+ }
+ 
+ @media(max-width:768px) {
+     main {
+         grid-template-columns: repeat(2, 1fr);
+     }
+     .speakBtn {
+         display: inline-block;
+         top: 0;
+         right: 0;
+     }
+     .type-area {
+         text-align: center;
+     }
+ }
+ 
+ @media(max-width:480px) {
+     main {
+         grid-template-columns: 1fr;
+     }
+     .btn {
+         display: block;
+         margin: 1px auto;
+         font-size: 15px;
+     }
+     h1 {
+         font-size: 25px;
+     }
+     .btn {
+         border-radius: 50px;
+     }
+     .text-box {
+         min-width: 80%;
+         background-color: rgba(0, 0, 0, 0.7);
+         top: 8%;
+     }
+     .social-links {
+         display: none;
+     }
+     .speakBtn {
+         display: inline-block;
+         top: 0;
+         right: 0;
+     }
+ }
