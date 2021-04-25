@@ -38,17 +38,19 @@
         <h5 class="uppercase text-center">Please let us know</h5>
     </div>
 
-    <section class="container">
-        <form onsubmit="return sendMail(this); " method="POST ">
+    <section class="container text-center">
+        <form onsubmit="return sendMail(this);" method="POST ">
 
-            <div class="form-control">
+            <div class="form-c">
                 <input type="text" required/>
-                <label>Name</label></div>
-            <div class="form-control">
+                <label>Name</label>
+            </div>
+            <div class="form-c">
                 <input type="text" required/>
                 <label>Email Address</label>
-            </div><textarea rows="5 " name="feedbacksummary " class="form-control " id="projectsummary " placeholder="Project Description " required></textarea>
-            <button type="submit " class=" btn-secondary center-block ">Send feedback</button>
+            </div>
+            <textarea rows="5 " name="feedbacksummary" placeholder="Project Description " required></textarea>
+            <button type="submit " class="btn-secondary center-block ">Send feedback</button>
         </form>
         </div>
         </div>
