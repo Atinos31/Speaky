@@ -1,12 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #444;
-    color: #fff;
-}
-
-.text-b {}
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #444;
+        color: #000;
+        background: url('../images/post.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        z-index: -100;
+        height: 80vh;
+        overflow: hidden;
+        position: relative;
+        background-blend-mode: multiply;
+    }
+    
+    h3 {
+        font-family: 'Abril Fatface', sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    .container,
+    .feedback {
+        color: #000;
+        z-index: 5;
+        opacity: 1;
+    }

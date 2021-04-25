@@ -287,4 +287,7 @@
              top: 0;
              right: 0;
          }
+         .d-none {
+             display: none;
+         }
      }
