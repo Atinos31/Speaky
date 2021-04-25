@@ -41,19 +41,21 @@
     <section class="container text-center">
         <form onsubmit="return sendMail(this);" method="POST ">
 
-            <div class="form-c">
-                <input type="text" required/>
-                <label>Name</label>
+            <div class="form-group">
+                <label for="fnames">Full Names</label>
+                <input type="text" class="form-control" id="fnames" placeholder="Enter full names" name="fnames" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
             </div>
-            <div class="form-c">
-                <input type="text" required/>
-                <label>Email Address</label>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
             </div>
-            <textarea rows="5 " name="feedbacksummary" placeholder="Project Description " required></textarea>
-            <button type="submit " class="btn-secondary center-block ">Send feedback</button>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        </div>
-        </div>
 
     </section>
     <section class="footer text text-center ">
