@@ -7,10 +7,10 @@
     body {
         background-color: #444;
         color: #000;
-        background: url('../images/post.jpg');
+        background: url('../images/bg4.jpg');
         background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
+        background-position: center;
+        background-size: cover;
         z-index: -100;
         height: 80vh;
         overflow: hidden;
@@ -23,9 +23,49 @@
         letter-spacing: 1px;
     }
     
+    .fa-comments {
+        color: #fff!important;
+    }
+    
     .container,
     .feedback {
-        color: #000;
+        color: #fff;
         z-index: 5;
         opacity: 1;
+    }
+    
+    .btn-primary {
+        cursor: pointer;
+        background-color: darkgreen;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 18px;
+        padding: 14px 40px;
+        text-transform: capitalize;
+        z-index: 999;
+        text-align: center;
+        outline: none;
+        border: 0;
+        display: block;
+        margin: auto auto;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .btn-primary:hover {
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        border: 1px solid darkgreen;
+    }
+    
+    .copyright {
+        color: #fff;
+    }
+    /*media query*/
+    
+    @media(max-width:480px) {
+        .social-links {
+            display: none;
+        }
     }
