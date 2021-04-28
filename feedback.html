@@ -18,7 +18,7 @@
     <title>Text to Speech app</title>
     <link rel="stylesheet" href="assets/css/feedback.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             emailjs.init("user_ypk2G1kkPoxjbWEmsTwIy");
@@ -39,25 +39,27 @@
     </div>
 
     <section class="container">
-        <form onsubmit="return sendMail(this);" method="POST ">
+        <form onsubmit="return sendMail(this);" method="POST">
 
-            <div class="form-group">
-                <label for="fnames">Full Names</label>
-                <input type="text" class="form-control" id="fnames" placeholder="Enter full names" name="fnames" required>
+            <div class="center-form">
+                <label for="for_name">Full Names</label>
+                <input type="text" class="form-control" name="name" id="fullnames" placeholder="Enter full names" name="from_name" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="emailaddress" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
-            <textarea placeholder="write your opinion here..." class="form-control"></textarea>
+            <textarea placeholder="write your opinion here..." class="form-control" id="feedbacksummary" name="feedbacksummary"></textarea>
 
 
-            <button type="submit" class="btn-primary">Submit</button>
+            <button type="submit" class="btn-primary" id="button">Submit</button">
         </form>
+
+
 
     </section>
     <section class="footer text text-center ">
@@ -102,7 +104,6 @@
     </div>
     </div>
 
-    <script src="assets/js/script.js "></script>
     <script src="assets/js/sendEmail.js "></script>
 </body>
 
