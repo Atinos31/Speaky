@@ -1,12 +1,12 @@
 <h1 align="left">Speaky!</h1>
 interactive  Frontend Development Milestone Project 2.
 
-![display from differnt screen shots](asets/images/)
+![display from different screen shots](http://ami.responsivedesign.is/#)
 
-## [View the live project here.](https://atinos31.github.io/Speaky/)
+  [ 👁 View the live project here.](https://atinos31.github.io/Speaky/)
 ---
-This is a text to speech application created mainly for non verbal children with learning diabilities.
-Its main goal is to help families to better understand the basic needs and feeling of their children in real thereby simplifying their daily lives.
+This is a text to speech application created mainly for non verbal children with learning issues.
+Its main goal is to help families to better understand the basic needs and feeling of their children in real time thereby simplifying their daily lives.
 
 
 # Table of contents
@@ -37,17 +37,22 @@ Its main goal is to help families to better understand the basic needs and feeli
 # UX
 
 ## Website Owner Business Goals
-- The main reason of creating this app is to help special needs children communicate with their friends and family in much easily way about their basic needs and feelings in real time.
+- The main reason of creating this app is to help non verbal special needs children communicate with their friends and family in an easy way about their basic needs and feelings in real time.
 - Users can find useful descriptive content to help them express their feelings.
 - Users can interact by touching a photo.
 - Users can get feedback in form of a voice expressing what they need.
-- users can choose their preferred voice and language.
+- users can choose their preferred voice.
+- users can type in their feelings ,needs and wants.
 
 ## User Goals
 
 ### New User Goals
 - As a first time visiter, i want to be able to find relevant information fast and navigate easily to find necessary content.
 - As a first time visitor i want to be able to understand the main role of the app.
+- As a first time user i want to be able to choose the voice that suits me.
+- As a first time user i want to be able to write down my emotions.
+- As a first time user i wan to be able to hear  voice feedback after typing in my needs.
+- As a first time user i wan to be able to choose any photo to communicate my needs in real time.
 
 
 ### Returning User Goals
@@ -55,8 +60,10 @@ Its main goal is to help families to better understand the basic needs and feeli
 - As a returning visitor i want to be able to leave feedback regarding what improvements could be implemented.
 
 ## Website Structure
-  - The website is designed to be easy to navigate and user friendly on all device types but mainly on mobile and tablettes.
-  - Users can  can easily interact  using the buttons.
+  - The website is designed to be easy to navigate and user friendly on all device types but its mainly designed for  mobile and tablettes.
+  - Users can  can easily interact  using the buttons and selecting images.
+  - users can type in their feeling and emotions in real time.
+  - users can leave feedback on what they liked and what they could propose to be improved on.
 
 
 ## Wireframes
@@ -94,15 +101,25 @@ I used balsamiq to create the wireframes.
 * #### The Navigation bar set to sticky position is visible at the top for each section, Its fully responsive and changes to a humburger menu once on mobile devices.
 * Navigation Scheme On the left side there is a logo and it can be used a nav link to the home section.
 * The header at the center top of the page and it is meant to be remain at a fixed position as the logo
+* The button to choose voice is on the right top of the page.
+
+## Main 
+The main are consists of two sections.
+1. Type section
+in this section , for the children that can write, they may type their emotions, feelings and wants in real time . As i could not include all the imaginable feelings wants and emotions. i thought it best to include this section.
+
+2. Image, text section
+In this section, its more to do with visualisation. the child is able to choose what they feel or want , and in return a voice feedback is played therby the parent can understand what they need.
 ## Footer
  The footer is positioned at the bottom of the page and it contains:
 
-  * feedback
+  * feedback- this leads to a different page with a form that can be filled to leave feedback.
   * social media links
   * copyright 
 
 
-## Future implementation
+## Future 
+1. In the future , the app can have different languages implemented.
 
 
 ## Technologies Used
@@ -119,9 +136,9 @@ I used balsamiq to create the wireframes.
 1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 2. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'FATFACE & LATO Web' font into the style.css file which is used on all pages throughout the project.
 3. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+    - Font Awesome was used For website logo to add icons for aesthetic and UX purposes.
 4. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 5. [Balsamiq:](https://balsamiq.com/)
@@ -150,7 +167,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   The Website was tested on Google Chrome.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, Surface Duo,Moto G4,iPhone6/7/8 & iPhoneX .
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends  were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Known Bugs
 # Deployment
@@ -202,7 +219,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Credits
  
- * I used code institute student template to begin this project[gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+ * I used code institute student template to begin this project[ gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 ### Code
 -   [CSS tricks](https://css-tricks.com/)
@@ -219,4 +236,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   My Mentor for continuous helpful feedback.
 -   Full stack Wattsapp group for the positive feeback and encouragement.
--  Slack for always having an answer when i needed it.
+-  Slack for peer code review feeback
