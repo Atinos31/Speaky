@@ -34,6 +34,10 @@
         opacity: 1;
     }
     
+    input:focus {
+        border: 1px solid darkgreen;
+    }
+    
     .btn-primary {
         cursor: pointer;
         background-color: darkgreen;

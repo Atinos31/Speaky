@@ -1,21 +1,6 @@
 // Disable form submissions if there are invalid fields
-(function() {
-    'use strict';
-    window.addEventListener('load', function() {
-        // Get the forms we want to add validation styles to
-        const forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        const validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
-})();
+const submit = document.getElementById("button");
+submit.addEventListener("click", myFunction);
 
 function sendMail(contactForm) {
     emailjs.send("gmail", "template_04ew0co", {
@@ -32,4 +17,9 @@ function sendMail(contactForm) {
             }
         );
     return false; // To block from loading a new page
+
+}
+
+function myFunction() {
+    document.getElementById("button").innerHTML = "sent";
 }
