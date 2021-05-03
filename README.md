@@ -87,7 +87,7 @@ I used balsamiq to create the wireframes.
 ```
 
 ### Images
- I used images from [unsplash](https://unsplash.com/) and [pexels](https://www.pexels.com/fr-fr/chercher/bunji%20jump/) and are credited in the [credits](#credits) section.
+ All images used are from [pixabay.com](https://pixabay.com/) and have been compressed using [tinypng.com](https://tinypng.com/)
 
 
 # Features
