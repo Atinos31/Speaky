@@ -121,6 +121,11 @@ function setTextMessage(text) {
 function speakText() {
     speechSynthesis.speak(message);
 }
+
+//set voice
+function setVoice(e) {
+    message.voice = voices.find(voice.name === e.target.value);
+}
 //when voices are changed
 speechSynthesis.addEventListener('voiceschanged', getVoices);
 
@@ -147,6 +152,8 @@ speakBtn.addEventListener('click', () => {
     speakText();
 
 });
+//change voice
+voiceSelect.addEventListener('change', setVoice);
 
 //getVoices function called
 getVoices();
