@@ -155,5 +155,6 @@ speakBtn.addEventListener('click', () => {
 //change voice
 voiceSelect.addEventListener('change', setVoice);
 
+
 //getVoices function called
 getVoices();
