@@ -114,7 +114,7 @@ In this section, its more to do with visualisation. the child is able to choose 
   * copyright 
 
 
-## Future 
+## Future Features
 1. In the future , the app can have different languages implemented.
 
 
@@ -122,6 +122,7 @@ In this section, its more to do with visualisation. the child is able to choose 
 ### Languages Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [passed tests](https://validator.w3.org/nu/#textarea)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [JavaScript](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
@@ -142,11 +143,17 @@ In this section, its more to do with visualisation. the child is able to choose 
 6. [canva](https://www.canva.com/)
     - Canva was used to create the color scheme.
 7. [Vsc](https://www.canva.com/)
-    - visual studio code was used as a code editor 
+    - visual studio code was used as a code editor .
+8.[hover min css](https://ianlunn.github.io/Hover/)
+  - hover min css was used as a hover effect on the social links in the footer.
 
 
 
 # Testing
+## [Html validator](https://validator.w3.org/)
+## [CSS validator](-https://validator.w3.org/)
+## [JSlint](https://www.jslint.com/)
+* no major warnings.
 
 ## Code Validation
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
