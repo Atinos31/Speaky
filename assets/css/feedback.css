@@ -52,7 +52,7 @@
         }
         
         input:focus {
-            border: 1px solid rgb(20, 218, 20);
+            border: 1px solid darkgreen
         }
         
         .btn-primary {

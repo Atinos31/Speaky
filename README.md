@@ -79,8 +79,9 @@ I used balsamiq to create the wireframes.
 
 ## Surface
 
- #### Colour Scheme
-![colour scheme](assets/images/uga-tours.jpg)
+ #### Color Scheme
+ * I chose to go with a subtle  but fresh color scheme that is easy on the eyes.
+![colour scheme](assets/images/colorscheme.jpg)
 
 ## Fonts
  * fonts used are Abril+Fatface for headings and Lato for paragraghs.
@@ -158,7 +159,7 @@ I used balsamiq to create the wireframes.
 ## [Html validator](https://validator.w3.org/)
 ## [CSS validator](-https://validator.w3.org/)
 ## [JSlint](https://www.jslint.com/)
-* no major warnings.
+
 
 ## Code Validation
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
@@ -168,8 +169,10 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [Jslint](https://www.jslint.com/) - [no major warning]()
 
 ### User stories testing
- - choose voice button works as intended.
+ - A user can choose the preferred voice to use with the app.
  - A user can type their emotion and in return get an audio feeback.
+  - A user can tap on the images and in return get an audio feedback with each specific image.
+  - A user can leave feedback.
 ### Performance Testing
    - I ran [lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check for performance, accesibility, SEO and best paractices.
 
