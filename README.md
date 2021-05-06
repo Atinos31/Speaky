@@ -9,6 +9,9 @@ Interactive  Frontend Development  Milestone Project 2 for code institute.
 ---
 This is a text to speech application created mainly for non verbal children with learning issues.
 Its main goal is to help families to better understand the basic needs and feeling of their children in real time thereby simplifying their daily lives.
+The SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device.
+It is compartible with most browsers except internet explorer, Opera android and webview android.
+ 
 
 
 # Table of contents
@@ -181,14 +184,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Further Testing
 
 -   The app was tested on Google Chrome, firefox,
--   The website was viewed on a variety of devices such as Desktop, Laptop, Surface Duo,Moto G4,iPhone6/7/8 & iPhoneX . its more user firendly on mobile and tablette.
+-   The app was viewed on a variety of devices such as laptop, iphones
 -   Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
 
 ### Known Bugs
- - submit button still needs to be reconfigured.
+ - submit button still needs to be reconfigured- -solved
  - responsiveness on desktop size screens.
+ - voicechange function not working on iphone8....more testing needed
  - voice options.
- - confirmation message after submit button pressed, having touble with that.
+ - confirmation message after submit button pressed, having touble with that.- ## solved
 # Deployment
 
 ### GitHub Pages
