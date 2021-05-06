@@ -6,10 +6,12 @@ function sendForm(contactForm) {
         })
         .then(
             function(response) {
-                console.log('SUCCESS!', response.status, response.text);
+                console.log('SUCCESS!', response.status, response.text)
+                alert('Your message has been sent!');
             },
             function(error) {
                 console.log('FAILED', error);
+                alert('ooops something gone wrong!')
             }
         );
     return false; // To block from loading a new page
