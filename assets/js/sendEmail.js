@@ -20,6 +20,6 @@ function sendMail(contactForm) {
 
 }
 
-function myFunction() {
-    document.getElementById("button").innerHTML = "sent";
-}
+/*function myFunction() {
+document.getElementById("button").innerHTML = "sent";
+} */
