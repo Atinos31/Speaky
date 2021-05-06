@@ -188,6 +188,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
  - submit button still needs to be reconfigured.
  - responsiveness on desktop size screens.
  - voice options.
+ - confirmation message after submit button pressed, having touble with that.
 # Deployment
 
 ### GitHub Pages

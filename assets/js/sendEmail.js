@@ -1,7 +1,3 @@
-// Disable form submissions if there are invalid fields
-const submit = document.getElementById("button");
-submit.addEventListener("click", myFunction);
-
 function sendMail(contactForm) {
     emailjs.send("gmail", "template_04ew0co", {
             "from_name": contactForm.name.value,
