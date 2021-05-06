@@ -43,8 +43,8 @@ Its main goal is to help families to better understand the basic needs and feeli
 - Users can find useful descriptive content to help them express their feelings.
 - Users can interact by touching a photo.
 - Users can get feedback in form of a voice expressing what they need.
-- users can choose their preferred voice.
-- users can type in their feelings ,needs and wants.
+- Users can choose their preferred voice.
+- Users can type in their feelings ,needs and wants.
 
 ## User Goals
 
@@ -65,7 +65,7 @@ Its main goal is to help families to better understand the basic needs and feeli
   - The website is designed to be easy to navigate and user friendly on all device types but its mainly designed for  mobile and tablettes.
   - Users can  can easily interact  using the buttons and selecting images.
   - users can type in their feeling and emotions in real time.
-  - users can leave feedback on what they liked and what they could propose to be improved on.
+  - Users can leave feedback on what they liked and what they could propose to be improved on.
 
 
 ## Wireframes
@@ -83,8 +83,8 @@ I used balsamiq to create the wireframes.
 ![colour scheme](assets/images/uga-tours.jpg)
 
 ## Fonts
- * fonts used are Roboto for headings and Open sans for paragraghs.
-        - 
+ * fonts used are Abril+Fatface for headings and Lato for paragraghs.
+         
 ```html
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap">
 
@@ -95,7 +95,7 @@ I used balsamiq to create the wireframes.
 
 
 # Features
-   - This is a one page app consistion of three sections, header, main and footer .
+   - This app consists of homepage that includes three sections: header, main,footer and a feedback page with a form.
 
 ## Navigation Bar 
 *  The Navigation bar set to sticky position is visible at the top for each section, Its fully responsive and changes to a humburger menu once on mobile devices.
@@ -104,12 +104,13 @@ I used balsamiq to create the wireframes.
 * The button to choose voice is on the right top of the page.
 
 ## Main 
-The main are consists of two sections.
-1. Type section
-in this section , for the children that can write, they may type their emotions, feelings and wants in real time . As i could not include all the imaginable feelings wants and emotions. i thought it best to include this section.
+### The main are consists of two sections:
 
-2. Image, text section
-In this section, its more to do with visualisation. the child is able to choose what they feel or want , and in return a voice feedback is played therby the parent can understand what they need.
+ #### 1.Type section
+  - In this section , for the children that can write, they may type their emotions, feelings and wants in real time . As i could not include all the imaginable feelings wants and emotions. i thought it best to include this section.
+
+#### 2. Image, text section
+  - In this section, its more to do with visualisation. the child is able to choose what they feel or want , and in return a voice feedback is played therby the parent can understand what they need.
 ## Footer
  The footer is positioned at the bottom of the page and it contains:
 
@@ -163,7 +164,9 @@ In this section, its more to do with visualisation. the child is able to choose 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Jigsaw html validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Results](https://validator.w3.org/nu/#textarea) 
--   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - ![Result](assets/images/validated-css.png)
+-   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Result](assets/images/validated-css.png)
+-   [Jslint](https://www.jslint.com/) - [no major warning]()
+
 
 ### Performance Testing
    - I ran [lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check for performance, accesibility, SEO and best paractices.
@@ -172,11 +175,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Further Testing
 
--   The Website was tested on Google Chrome.
--   The website was viewed on a variety of devices such as Desktop, Laptop, Surface Duo,Moto G4,iPhone6/7/8 & iPhoneX .
--   Friends  were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   The app was tested on Google Chrome, firefox,
+-   The website was viewed on a variety of devices such as Desktop, Laptop, Surface Duo,Moto G4,iPhone6/7/8 & iPhoneX . its more user firendly on mobile and tablette.
+-   Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
 
 ### Known Bugs
+ - submit button still needs to be reconfigured.
+ - responsiveness on desktop size screens.
+ - voice options.
 # Deployment
 
 ### GitHub Pages
@@ -229,7 +235,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
  * I used code institute student template to begin this project[ gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 ### Code
--   [CSS tricks](https://css-tricks.com/)
 
 -    [W3schhool](https://www.w3schools.com/default.asp)
 
