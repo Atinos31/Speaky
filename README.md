@@ -1,7 +1,9 @@
 <h1 align="left">Speaky!</h1>
-interactive  Frontend Development Milestone Project 2.
+Interactive  Frontend Development Milestone Project 2 for code institute.
 
-![display from different screen shots](http://ami.responsivedesign.is/#)
+
+
+- Display from different screen shots![display from different screen shots](assets/images/mockup4.png)
 
   [ 👁 View the live project here.](https://atinos31.github.io/Speaky/)
 ---
@@ -69,7 +71,9 @@ Its main goal is to help families to better understand the basic needs and feeli
 ## Wireframes
 I used balsamiq to create the wireframes. 
 > there are some slight changes on the real site to improve the user experience.
-- [Wireframes](https://slack-files.com/files-pri-safe/T0L30B202-F01USPZ1JPK/wireframe2.pdf?c=1620035721-1559e92fad204b3f)
+- Mobile wireframe ![mobile](assets/wireframes/mobile.png)
+- Tablette wireframes![tablette](assets/wireframes/tablette1.png)
+-  Desktop wireframe![desktop](assets/wireframes/desktop1.png)
 
 
 
