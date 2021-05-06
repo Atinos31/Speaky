@@ -167,7 +167,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Result](assets/images/validated-css.png)
 -   [Jslint](https://www.jslint.com/) - [no major warning]()
 
-
+### User stories testing
+ - choose voice button works as intended.
+ - A user can type their emotion and in return get an audio feeback.
 ### Performance Testing
    - I ran [lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check for performance, accesibility, SEO and best paractices.
 
