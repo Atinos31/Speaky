@@ -1,9 +1,9 @@
-<h1 align="left">Speaky!</h1>
-Interactive  Frontend Development Milestone Project 2 for code institute.
+<h1 align="center">Speaky!</h1>
+Interactive  Frontend Development  Milestone Project 2 for code institute.
 
 
 
-- Display from different screen shots![display from different screen shots](assets/images/mockup4.png)
+- ### Display from different screen shots![display from different screen shots](assets/images/mockup4.png)
 
   [ 👁 View the live project here.](https://atinos31.github.io/Speaky/)
 ---
@@ -98,7 +98,7 @@ I used balsamiq to create the wireframes.
    - This is a one page app consistion of three sections, header, main and footer .
 
 ## Navigation Bar 
-* #### The Navigation bar set to sticky position is visible at the top for each section, Its fully responsive and changes to a humburger menu once on mobile devices.
+*  The Navigation bar set to sticky position is visible at the top for each section, Its fully responsive and changes to a humburger menu once on mobile devices.
 * Navigation Scheme On the left side there is a logo and it can be used a nav link to the home section.
 * The header at the center top of the page and it is meant to be remain at a fixed position as the logo
 * The button to choose voice is on the right top of the page.
@@ -113,9 +113,10 @@ In this section, its more to do with visualisation. the child is able to choose 
 ## Footer
  The footer is positioned at the bottom of the page and it contains:
 
-  * feedback- this leads to a different page with a form that can be filled to leave feedback.
-  * social media links
-  * copyright 
+  * feedback link - this leads to a new page with a form that can be filled to leave feedback.
+  * A speaky logo that leads back to the main page when clicked, although on small screens its set to display none and a link to go back to the home page is displayed.
+  * Social media links
+  * Copyright with a github link in it.
 
 
 ## Future Features
@@ -126,7 +127,6 @@ In this section, its more to do with visualisation. the child is able to choose 
 ### Languages Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [passed tests](https://validator.w3.org/nu/#textarea)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [JavaScript](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
@@ -137,19 +137,19 @@ In this section, its more to do with visualisation. the child is able to choose 
 1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 2. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'FATFACE & LATO Web' font into the style.css file which is used on all pages throughout the project.
+    - Google fonts were used to import the 'Fatface & Lato Web' font into the style.css file which is used on all pages throughout the project.
 3. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used For website logo to add icons for aesthetic and UX purposes.
 4. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 5. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+    - Balsamiq was used to create the wireframes in the beginning of the design process.
 6. [canva](https://www.canva.com/)
     - Canva was used to create the color scheme.
 7. [Vsc](https://www.canva.com/)
-    - visual studio code was used as a code editor .
-8.[hover min css](https://ianlunn.github.io/Hover/)
-  - hover min css was used as a hover effect on the social links in the footer.
+    - visual studio code was used as a code editor
+8. [hover min css](https://ianlunn.github.io/Hover/)
+   - hover min css was used as a hover effect on the social links in the footer.
 
 
 
