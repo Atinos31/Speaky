@@ -1,9 +1,9 @@
 <h1 align="center">Speaky!</h1>
-Interactive  Frontend Development  Milestone Project 2 for code institute.
+<h2 align="center"> Interactive  Frontend Development  Milestone Project 2 for Code Institute.</h2>
 
 
 
-- ### Display from different screen shots![display from different screen shots](assets/images/mockup4.png)
+### Display from different screen shots![display from different screen shots](assets/images/mockup4.png)
 
   [ 👁 View the live project here.](https://atinos31.github.io/Speaky/)
 ---
