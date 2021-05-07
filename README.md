@@ -154,7 +154,7 @@ As part of the design process, before starting the project i made initial wirefr
 1. In the future , the app can have different languages implemented.
 
 
-## Technologies Used
+## [Technologies Used](#technology)
 ### Languages Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
