@@ -9,12 +9,13 @@
 ---
 This is a text to speech application created mainly for non verbal children with learning issues.
 Its main goal is to help families to better understand the basic needs and feeling of their children in real time thereby simplifying their daily lives.
-I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device .
-It is compartible with most browsers except internet explorer, Opera android and webview android.
+* I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device.
+
 > Speech synthesis is accessed via the SpeechSynthesis interface, a text-to-speech component that allows programs to read out their text content (normally via the device's   default speech synthesiser.) Different voice types are represented by SpeechSynthesisVoice objects, and different parts of text that you want to be spoken are represented by  SpeechSynthesisUtterance objects. You can get these spoken by passing them to the SpeechSynthesis.speak() method.
 > 
 
 **This app uses the web speech Api which is experimental and may not fully work in some versions of certain browsers**
+SpeechSynthesis is compartible with most browsers except internet explorer, Opera android and webview android.
  
 
 
