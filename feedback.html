@@ -9,8 +9,7 @@
     <meta name="keywords" content="non-verbal, communication,speech therapy, special needs children,speech helper">
     <meta name="theme-color" content="e84d1b">
     <meta name="author" content="Sandra Atino">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> /
     <link rel="stylesheet" href="https://cdn.tutorialjinni.com/hover.css/2.3.1/css/hover-min.css">
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link rel="dns-prefetch" href="https://example.com">
@@ -33,94 +32,70 @@
     <div class="col-12 m-0">
         <span class="logo">
         <a href="index.html" class="#">
-          <i class="far fa-comments">
+          <i class="fas fa-comments">
           </i>
         </a>
       </span>
     </div>
     <div class="container">
-        <h1 class="feedback-heading uppercase text-center"> Got Some Feedback?
-        </h1>
-        <h2 class="uppercase text-center"> Please let us know
-        </h2>
+        <div class="header">
+            <h1> Got Some Feedback?
+            </h1>
+            <h2> Please let us know
+            </h2>
+        </div>
 
-        <!--form-->
-
-        <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form" clas="form">
+        <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form" class="form">
             <div class="form-control">
                 <label for="for_name">Full Names</label>
-                <input type="text" id="for_name" name="name" placeholder="Enter your full names">
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclametion-circle"></i>
-                <small>Error Message</small>
-
+                <input type="text" id="for_name" name="name" placeholder="Enter your full names" required>
 
             </div>
             <div class="form-control">
                 <label for="email">Email Address</label>
                 <input type="email" name="emailaddress" id="email" aria-describedby="emailHelp" placeholder="Enter Email..." required>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclametion-circle"></i>
-                <small>Error Message</small>
-
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-
-            <textarea class="form-control " id="feedbacksummary" name="feedbacksummary" placeholder="Please write your message here..." required>
+            <div class="form-control">
+                <textarea id="feedbacksummary" class="form-control" name="feedbacksummary" placeholder="Please write your message here... " required>
                     </textarea>
-
-            <button type="submit" class="btn-primary mt-5 mb-5"> Submit
-                </button>
+            </div>
+            <button type="submit"> Submit
+                    </button>
         </form>
     </div>
+    <!-- SOCIAL PANEL HTML -->
+    <section>
+        <div class="social-panel-container ">
+            <div class="social-panel ">
+                <p>Created with <i class="fa fa-heart "></i> by
+                    <a target="_blank " href=" ">Sandra Atino</a></p>
+                <button class="close-btn "><i class="fas fa-times "></i></button>
+                <h4>Get in touch on</h4>
+                <ul>
+                    <li>
+                        <a href=" " target="_blank ">
+                            <i class="fab fa-github "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" " target="_blank ">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" " target="_blank ">
+                            <i class="fab fa-linkedin "></i>
+                        </a>
+                    </li>
 
-    <div class=" row text-center ">
-        <div class="col-md-4 ">
-            <a href="index.html " class="# ">
-                <i class="far fa-comments ">
-              </i>
-            </a>
-
-
-        </div>
-        <div class="col-md-4 ">
-            <div class="social-links ">
-                <a href="https://www.linkedin.com/in/sandra-atino-459a231a9/ " target="_blank " rel="noopener " aria-label="opens linkedin page in a new tab ">
-                    <i class="fab fa-linkedin-in fa-2x hvr-pulse-grow ">
-            </i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=P6qlAvFSH10 " target="_blank " rel="noopener " aria-label="opens youtube page in a new tab ">
-                    <i class="fab fa-youtube fa-2x hvr-pulse-grow ">
-            </i>
-                </a>
-                <a href="https://github.com/Atinos31 " target="_blank " rel="noopener " aria-label="opens github page in a new tab ">
-                    <i class="fab fa-github fa-2x hvr-pulse-grow ">
-            </i>
-                </a>
+                </ul>
             </div>
         </div>
-        <div class="col-md-4 ">
-            <div class="feedback-form home ">
-                <a href="index.html "> Home
-            <i class="fas fa-hand-point-left hvr-pulse-grow text-warning ">
-            </i>
-          </a>
-            </div>
-        </div>
-    </div>
-    <hr class="footer-divider bg-info mt-3 ">
-    <div class="copyright text-center mt-1 mb-1 ">
-        <small> Copyright
-        &
-        copy;
-        2021
-        <a class="hvr-grow " style="color: #e8c010; " href="https://github.com/Atinos31 " target="_blank " rel="noopener "> atinos31
-        </a>
-        | All rights reserved.
-      </small>
-    </div>
+        <button class="floating-btn ">
+	Get in Touch
+</button>
+    </section>
     <script src="assets/js/sendEmail.js ">
     </script>
 </body>
-
-</html>
