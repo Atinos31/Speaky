@@ -15,7 +15,7 @@ Its main goal is to help families to better understand the basic needs and feeli
 > 
 
 **This app uses the web speech Api which is experimental and may not fully work in some versions of certain browsers**
-SpeechSynthesis is compartible with most browsers except internet explorer, Opera android and webview android.
+ - SpeechSynthesis is compartible with most browsers except internet explorer, Opera android and webview android.
  
 
 
