@@ -38,7 +38,7 @@
         </a>
       </span>
     </div>
-    <div class="container mt-2 mb-5">
+    <div class="container">
         <h1 class="feedback-heading uppercase text-center"> Got Some Feedback?
         </h1>
         <h2 class="uppercase text-center"> Please let us know
@@ -46,15 +46,22 @@
 
         <!--form-->
 
-        <form onsubmit="return sendForm(this);" method="POST" id="form" name="contactform">
-            <div class="form-group">
+        <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form" clas="form">
+            <div class="form-control">
                 <label for="for_name">Full Names</label>
-                <input type="text" class="form-control" id="for_name" name="name" placeholder="Enter your full names" required>
+                <input type="text" id="for_name" name="name" placeholder="Enter your full names">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclametion-circle"></i>
+                <small>Error Message</small>
+
 
             </div>
-            <div class="form-group ">
+            <div class="form-control">
                 <label for="email">Email Address</label>
-                <input type="email" class="form-control" name="emailaddress" id="email" aria-describedby="emailHelp" placeholder="Enter Email..." required>
+                <input type="email" name="emailaddress" id="email" aria-describedby="emailHelp" placeholder="Enter Email..." required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclametion-circle"></i>
+                <small>Error Message</small>
 
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>

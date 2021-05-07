@@ -17,7 +17,3 @@ function sendForm(contactForm) {
     return false; // To block from loading a new page
 
 }
-
-/*function myFunction() {
-document.getElementById("button").innerHTML = "sent";
-} */
