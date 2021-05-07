@@ -72,7 +72,8 @@ It is compartible with most browsers except internet explorer, Opera android and
 
 
 ## Wireframes
-I used balsamiq to create the wireframes. 
+
+As part of the design process, before starting the project i made initial wireframes using balsamique. Creating these wireframes helped me plan the basic structure and arrangement of the features for the app.
 > there are some slight changes on the real site to improve the user experience.
 - Mobile wireframe ![mobile](assets/wireframes/mobile.png)
 - Tablette wireframes![tablette](assets/wireframes/tablette1.png)
@@ -81,13 +82,20 @@ I used balsamiq to create the wireframes.
 
 
 ## Surface
+ A simple clean design with easy to use buttons to handle the navigation throughout the app.
+
 
  #### Color Scheme
  * I chose to go with a subtle  but fresh color scheme that is easy on the eyes.
 ![colour scheme](assets/images/colorscheme.jpg)
 
-## Fonts
- * fonts used are Abril+Fatface for headings and Lato for paragraghs.
+## Typograghy
+ * The main font used throughout the site is 'Lato'. The font is clean and elegant, making it a good choice for web design.
+
+- I have used the 'Abril+Fatcae' font for titles and headers all over the site.
+
+- Sans Serif is set as the fallback font if for any reason the main fonts aren't being imported into the site correctly.
+
          
 ```html
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap">
@@ -99,7 +107,16 @@ I used balsamiq to create the wireframes.
 
 
 # Features
-   - This app consists of homepage that includes three sections: header, main,footer and a feedback page with a form.
+   
+    -  **A user-friendly interface with easy navigation throughout the site**
+    - Attractive, minimalistic design with visuals and information presented clearly and concisely.
+
+    - Easily readable fonts and simple navigation throughout the site.
+    - Fixed navigation bar visible on every page including a menu dropdown and brand logo to link back to the homepage.
+
+  
+- **Buttons**
+    - Clear interactive buttons used for a effortless user journey.
 
 ## Navigation Bar 
 *  The Navigation bar set to sticky position is visible at the top for each section, Its fully responsive and changes to a humburger menu once on mobile devices.
