@@ -12,6 +12,9 @@ Its main goal is to help families to better understand the basic needs and feeli
 I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device .
 It is compartible with most browsers except internet explorer, Opera android and webview android.
 > Speech synthesis is accessed via the SpeechSynthesis interface, a text-to-speech component that allows programs to read out their text content (normally via the device's   default speech synthesiser.) Different voice types are represented by SpeechSynthesisVoice objects, and different parts of text that you want to be spoken are represented by  SpeechSynthesisUtterance objects. You can get these spoken by passing them to the SpeechSynthesis.speak() method.
+> 
+
+**This app uses the web speech Api which is experimental and may not fully work in some versions of certain browsers**
  
 
 
@@ -111,9 +114,10 @@ As part of the design process, before starting the project i made initial wirefr
    
    * A user-friendly interface with easy navigation throughout the site
    * Attractive, minimalistic design with visuals and information presented clearly and concisely.
-
+   * A button to choose voices
+   * A button for text input to be converted to speech.
    * Easily readable fonts and simple navigation throughout the site.
-   * brand logo to link back to the homepage.
+   * Brand logo to link back to the homepage.
 
   
 - **Buttons**
