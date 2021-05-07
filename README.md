@@ -112,7 +112,7 @@ As part of the design process, before starting the project i made initial wirefr
    * Attractive, minimalistic design with visuals and information presented clearly and concisely.
 
    * Easily readable fonts and simple navigation throughout the site.
-   * Fixed navigation bar visible on every page including a menu dropdown and brand logo to link back to the homepage.
+   * brand logo to link back to the homepage.
 
   
 - **Buttons**
