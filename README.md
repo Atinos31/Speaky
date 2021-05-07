@@ -9,7 +9,7 @@ Interactive  Frontend Development  Milestone Project 2 for code institute.
 ---
 This is a text to speech application created mainly for non verbal children with learning issues.
 Its main goal is to help families to better understand the basic needs and feeling of their children in real time thereby simplifying their daily lives.
-The SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device.
+I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device .
 It is compartible with most browsers except internet explorer, Opera android and webview android.
  
 
