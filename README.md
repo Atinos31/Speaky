@@ -10,9 +10,7 @@ Display from different screen shots![display from different screen shots](assets
 This is a text to speech application created mainly for non verbal children with learning issues.
 Its main goal is to help families to better understand the basic needs and feeling of their children in real time thereby simplifying their daily lives.
 <<<<<<< HEAD
-* I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device .
-* It is compartible with most browsers except internet explorer, Opera android and webview android.
-=======
+
 * I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device.
 
 > Speech synthesis is accessed via the SpeechSynthesis interface, a text-to-speech component that allows programs to read out their text content (normally via the device's   default speech synthesiser.) Different voice types are represented by SpeechSynthesisVoice objects, and different parts of text that you want to be spoken are represented by  SpeechSynthesisUtterance objects. You can get these spoken by passing them to the SpeechSynthesis.speak() method.
@@ -20,7 +18,10 @@ Its main goal is to help families to better understand the basic needs and feeli
 
 **This app uses the web speech Api which is experimental and may not fully work in some versions of certain browsers**
  - SpeechSynthesis is compartible with most browsers except internet explorer, Opera android and webview android.
->>>>>>> d6e5b76e76bbf0e9f5ee4d4757bee96f15c3a91d
+ 
+_Click [Here](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) for more information._
+
+
  
 
 
@@ -30,14 +31,17 @@ Its main goal is to help families to better understand the basic needs and feeli
   - [Website Owner Business goals](#website-owner-business-goals)
   - [User Goals](#user-goals)
      - [New User Goals](#new-user-goals)
-     - [Returning visiter Goals](#returning-visitor-goals)
+     - [Returning User Goals](#returning-user-goals)
      - [Website Owner Business Goals](#website-owner-business-goals)
    - [User Stories](#user-stories)
    - [Website Structure](#website-structure)
    - [Wireframes](#wireframes)
    - [Surface](#surface)
+    - [Color Scheme](#colorscheme)
+    - [Typograghy](#typography)
+    - [Images](#images)
 - [Features](#features)
-- [Technology](#technology)
+- [Technologies Used](#technologies-used)
 - [Testing](#testing)
     - [Fuctionality](#functionality)
     - [Compartibility](#compartibility)
@@ -49,9 +53,9 @@ Its main goal is to help families to better understand the basic needs and feeli
 - [Credits](#credits)
 - [Aknowledgements](#aknowledgements)
 
-# UX
+# [UX](#ux)
 
-## Website Owner Business Goals
+## [Website Owner Business Goals](#website-owner-goals)
 - The main reason of creating this app is to help non verbal special needs children communicate with their friends and family in an easy way about their basic needs and feelings in real time.
 - Users can find useful descriptive content to help them express their feelings.
 - Users can interact by touching a photo.
@@ -59,9 +63,9 @@ Its main goal is to help families to better understand the basic needs and feeli
 - Users can choose their preferred voice.
 - Users can type in their feelings ,needs and wants.
 
-## User Goals
+## [User Goals](#user-goals)
 
-### New User Goals
+### [New User Goals](#new-user-goals)
 - As a first time visiter, i want to be able to find relevant information fast and navigate easily to find necessary content.
 - As a first time visitor i want to be able to understand the main role of the app.
 - As a first time user i want to be able to choose the voice that suits me.
@@ -70,18 +74,19 @@ Its main goal is to help families to better understand the basic needs and feeli
 - As a first time user i wan to be able to choose any photo to communicate my needs in real time.
 
 
-### Returning User Goals
+### [Returning User Goals](#returning-user-goals)
 
 - As a returning visitor i want to be able to leave feedback regarding what improvements could be implemented.
 
-## Website Structure
+## [Website Structure](#website-structure)
   - The website is designed to be easy to navigate and user friendly on all device types but its mainly designed for  mobile and tablettes.
   - Users can  can easily interact  using the buttons and selecting images.
   - users can type in their feeling and emotions in real time.
   - Users can leave feedback on what they liked and what they could propose to be improved on.
 
+## [Website Owner Business Goals](#website-owner-business-goals)
 
-## Wireframes
+## [Wireframes](#wireframes)
 
 As part of the design process, before starting the project i made initial wireframes using balsamique. Creating these wireframes helped me plan the basic structure and arrangement of the features for the app.
 > there are some slight changes on the real site to improve the user experience.
@@ -91,15 +96,15 @@ As part of the design process, before starting the project i made initial wirefr
 
 
 
-## Surface
+## [Surface](#surface)
  A simple clean design with easy to use buttons to handle the navigation throughout the app.
 
 
- #### Color Scheme
+ #### [Color Scheme](#colorscheme)
  * I chose to go with a subtle  but fresh color scheme that is easy on the eyes.
 ![colour scheme](assets/images/colorscheme.jpg)
 
-## Typograghy
+## [Typograghy](#typography)
  * The main font used throughout the site is 'Lato'. The font is clean and elegant, making it a good choice for web design.
 
 - I have used the 'Abril+Fatcae' font for titles and headers all over the site.
@@ -112,11 +117,11 @@ As part of the design process, before starting the project i made initial wirefr
 
 ```
 
-### Images
+### [Images](#images)
  All images used are from [pixabay.com](https://pixabay.com/) and have been compressed using [tinypng.com](https://tinypng.com/)
 
 
-# Features
+# [Features](#features)
    
    * A user-friendly interface with easy navigation throughout the site
    * Attractive, minimalistic design with visuals and information presented clearly and concisely.
@@ -149,14 +154,14 @@ As part of the design process, before starting the project i made initial wirefr
   * feedback link - this leads to a new page with a form that can be filled to leave feedback.
   * A speaky logo that leads back to the main page when clicked, although on small screens its set to display none and a link to go back to the home page is displayed.
   * Social media links
-  * Copyright with a github link in it.
+  * Copyright with a github link in that leads to a 404 error page.
 
 
 ## Future Features
 1. In the future , the app can have different languages implemented.
 
 
-## Technologies Used
+## [Technologies Used](#technologies-used)
 ### Languages Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -186,76 +191,71 @@ As part of the design process, before starting the project i made initial wirefr
 
 
 
-# Testing
-## [Html validator](https://validator.w3.org/)
-## [CSS validator](-https://validator.w3.org/)
-## [JSlint](https://www.jslint.com/)
+# [Testing](#testing)
+  ## [Functionality Testing](#functionality-testing)
+  
+   -  The app was tested on Google Chrome, firefox and safari
+   -   The app was viewed on a variety of devices such as desktop, laptop and mobile
+   -   Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
+  ## [Compartibility Testing](#compartibility-testing)
+
+  ## Code Validation
+   The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+    -   [W3C Jigsaw html validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Results](https://validator.w3.org/nu/#textarea) 
+    -   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Result](assets/images/validated-css.png)
+    -   [Jslint](https://www.jslint.com/) - [no major warning]()
+
+   ### [User stories testing](#user-stories-testing)
+    - A user can choose the preferred voice to use with the app.
+    - A user can type their emotion and in return get an audio feeback.
+     - A user can tap on the images and in return get an audio feedback with each specific image.
+    - A user can leave feedback.
+  ### [Performance Testing](#performance-testing)
+    - I ran [lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check for performance, accesibility, SEO and best paractices.
 
 
-## Code Validation
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-
--   [W3C Jigsaw html validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Results](https://validator.w3.org/nu/#textarea) 
--   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Result](assets/images/validated-css.png)
--   [Jslint](https://www.jslint.com/) - [no major warning]()
-
-### User stories testing
- - A user can choose the preferred voice to use with the app.
- - A user can type their emotion and in return get an audio feeback.
-  - A user can tap on the images and in return get an audio feedback with each specific image.
-  - A user can leave feedback.
-### Performance Testing
-   - I ran [lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check for performance, accesibility, SEO and best paractices.
-
-     
-
-### Further Testing
-
--   The app was tested on Google Chrome, firefox,
--   The app was viewed on a variety of devices such as laptop, iphones
--   Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
-
-### Known Bugs
- - submit button still needs to be reconfigured- -solved
+### [Known Bugs](#known-bugs)
+ - submit button still needs to be reconfigured- *solved*
  - responsiveness on desktop size screens.
  - voicechange function not working on iphone8....more testing needed
  - voice options.
  - confirmation message after submit button pressed, having touble with that.- ## solved
-# Deployment
+# [Deployment](#depployment)
 
-### GitHub Pages
+   ### GitHub Pages
 
-The project was deployed to GitHub Pages using the following steps...
+    The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com/Atinos31/Speaky) in the "GitHub Pages" section.
+    1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
+    2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+    3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+    4. Under "Source", click the dropdown called "None" and select "Master Branch".
+    5. The page will automatically refresh.
+    6. Scroll back down through the page to locate the now published site [link](https://github.com/Atinos31/Speaky) in the "GitHub Pages" section.
 
-### Forking the GitHub Repository
+  ### Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+   By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by   using the following steps...
 
-1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+    1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
+    2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+    3. You should now have a copy of the original repository in your GitHub account.
 
-### Making a Local Clone
+   ### Making a Local Clone
 
-1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
+    1. Log in to GitHub and locate the [Speaky](https://github.com/Atinos31/Speaky)
+    2. Under the repository name, click "Clone or download".
+    3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+    4. Open Git Bash
+    5. Change the current working directory to the location where you want the cloned directory to be made.
+    6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
-7. Press Enter. Your local clone will be created.
+    7. Press Enter. Your local clone will be created.
 
 ```
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
@@ -268,7 +268,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-## Credits
+## [Credits](#credits)
  
  * I used code institute student template to begin this project[ gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
@@ -282,8 +282,9 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - [MDN WEB DOCS](https://developer.mozilla.org/)
 
-### Acknowledgements
+### [Acknowledgements](#acknowledgements)
 
 -   My Mentor for continuous helpful feedback.
 -   Full stack Wattsapp group for the positive feeback and encouragement.
--  Slack for peer code review feeback
+-   Tutor support for encouraging me to look for the right solutions.
+-   Peer code review chanel on Slack for constuctive criticism.
