@@ -1,14 +1,17 @@
 <h1 align="center">Speaky!</h1>
-Interactive  Frontend Development  Milestone Project 2 for code institute.
+<h2 align="center"> Interactive  Frontend Development  Milestone Project 2 for Code Institute.</h2>
 
 
 
-- ### Display from different screen shots![display from different screen shots](assets/images/mockup4.png)
+### Display from different screen shots![display from different screen shots](assets/images/mockup4.png)
 
   [ 👁 View the live project here.](https://atinos31.github.io/Speaky/)
 ---
 This is a text to speech application created mainly for non verbal children with learning issues.
 Its main goal is to help families to better understand the basic needs and feeling of their children in real time thereby simplifying their daily lives.
+I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device .
+It is compartible with most browsers except internet explorer, Opera android and webview android.
+ 
 
 
 # Table of contents
@@ -69,7 +72,8 @@ Its main goal is to help families to better understand the basic needs and feeli
 
 
 ## Wireframes
-I used balsamiq to create the wireframes. 
+
+As part of the design process, before starting the project i made initial wireframes using balsamique. Creating these wireframes helped me plan the basic structure and arrangement of the features for the app.
 > there are some slight changes on the real site to improve the user experience.
 - Mobile wireframe ![mobile](assets/wireframes/mobile.png)
 - Tablette wireframes![tablette](assets/wireframes/tablette1.png)
@@ -78,13 +82,20 @@ I used balsamiq to create the wireframes.
 
 
 ## Surface
+ A simple clean design with easy to use buttons to handle the navigation throughout the app.
+
 
  #### Color Scheme
  * I chose to go with a subtle  but fresh color scheme that is easy on the eyes.
 ![colour scheme](assets/images/colorscheme.jpg)
 
-## Fonts
- * fonts used are Abril+Fatface for headings and Lato for paragraghs.
+## Typograghy
+ * The main font used throughout the site is 'Lato'. The font is clean and elegant, making it a good choice for web design.
+
+- I have used the 'Abril+Fatcae' font for titles and headers all over the site.
+
+- Sans Serif is set as the fallback font if for any reason the main fonts aren't being imported into the site correctly.
+
          
 ```html
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap">
@@ -96,7 +107,16 @@ I used balsamiq to create the wireframes.
 
 
 # Features
-   - This app consists of homepage that includes three sections: header, main,footer and a feedback page with a form.
+   
+   * A user-friendly interface with easy navigation throughout the site
+   * Attractive, minimalistic design with visuals and information presented clearly and concisely.
+
+   * Easily readable fonts and simple navigation throughout the site.
+   * brand logo to link back to the homepage.
+
+  
+- **Buttons**
+    - Clear interactive buttons used for a effortless user journey.
 
 ## Navigation Bar 
 *  The Navigation bar set to sticky position is visible at the top for each section, Its fully responsive and changes to a humburger menu once on mobile devices.
@@ -181,14 +201,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Further Testing
 
 -   The app was tested on Google Chrome, firefox,
--   The website was viewed on a variety of devices such as Desktop, Laptop, Surface Duo,Moto G4,iPhone6/7/8 & iPhoneX . its more user firendly on mobile and tablette.
+-   The app was viewed on a variety of devices such as laptop, iphones
 -   Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
 
 ### Known Bugs
- - submit button still needs to be reconfigured.
+ - submit button still needs to be reconfigured- -solved
  - responsiveness on desktop size screens.
+ - voicechange function not working on iphone8....more testing needed
  - voice options.
- - confirmation message after submit button pressed, having touble with that.
+ - confirmation message after submit button pressed, having touble with that.- ## solved
 # Deployment
 
 ### GitHub Pages
