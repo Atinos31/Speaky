@@ -151,7 +151,7 @@ As part of the design process, before starting the project i made initial wirefr
   * feedback link - this leads to a new page with a form that can be filled to leave feedback.
   * A speaky logo that leads back to the main page when clicked, although on small screens its set to display none and a link to go back to the home page is displayed.
   * Social media links
-  * Copyright with a github link in it.
+  * Copyright with a github link in that leads to a 404 error page.
 
 
 ## Future Features
