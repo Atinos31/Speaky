@@ -16,9 +16,16 @@ Its main goal is to help families to better understand the basic needs and feeli
 
 > Speech synthesis is accessed via the SpeechSynthesis interface, a text-to-speech component that allows programs to read out their text content (normally via the device's   default speech synthesiser.) Different voice types are represented by SpeechSynthesisVoice objects, and different parts of text that you want to be spoken are represented by  SpeechSynthesisUtterance objects. You can get these spoken by passing them to the SpeechSynthesis.speak() method.
 > 
+### Browser support
+Support for Web Speech API speech synthesis is still getting there across mainstream browsers, and is currently limited to the following:
 
-**This app uses the web speech Api which is experimental and may not fully work in some versions of certain browsers**
- - SpeechSynthesis is compartible with most browsers except internet explorer, Opera android and webview android.
+Firefox desktop and mobile support it in Gecko 42+ (Windows)/44+, without prefixes, and it can be turned on by flipping the media.webspeech.synth.enabled flag to true in about:config.
+
+Firefox OS 2.5+ supports it, by default, and without the need for any permissions.
+
+Chrome for Desktop and Android have supported it since around version 33, without prefixes.
+- **This app uses the web speech Api which is experimental and may not fully work in some versions of certain browsers**
+ 
  
 _Click [Here](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) for more information._
 
