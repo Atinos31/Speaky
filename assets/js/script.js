@@ -1,3 +1,4 @@
+//DOM ELEMENTS
 const main = document.querySelector('main');
 const voiceSelect = document.getElementById('voices');
 const textarea = document.getElementById('text');
