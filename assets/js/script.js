@@ -1,4 +1,3 @@
-//DOM ELEMENTS
 const main = document.querySelector('main');
 const voiceSelect = document.getElementById('voices');
 const textarea = document.getElementById('text');
@@ -59,7 +58,10 @@ const data = [{
     },
     {
         image: 'assets/images/grandma.jpg',
-        text: 'I Want To Go To Grandmas'
+        text: 'I Want To Go To Grandmas',
+
+
+
     }
 ];
 
@@ -72,7 +74,10 @@ function createBox(item) {
     const box = document.createElement('div');
 
     //put image and text to create an item
-    const { image, text } = item;
+    const {
+        image,
+        text
+    } = item;
 
     box.classList.add('box');
     box.innerHTML = `
