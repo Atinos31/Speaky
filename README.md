@@ -93,6 +93,8 @@ As part of the design process, before starting the project i made initial wirefr
 - Mobile wireframe ![mobile](assets/wireframes/mobile.png)
 - Tablette wireframes![tablette](assets/wireframes/tablette1.png)
 -  Desktop wireframe![desktop](assets/wireframes/desktop1.png)
+-  Contact wireframe![desktop](assets/wireframes/contact1.png)
+
 
 
 

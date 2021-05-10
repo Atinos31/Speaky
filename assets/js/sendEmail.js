@@ -18,7 +18,7 @@ function sendForm(contactForm) {
 
 }
 
-//modal after pressing submit button on feedback form
+//modal after pressing submit button on feedback form from w3schools
 // Get the modal
 const modal = document.getElementById("myModal");
 
