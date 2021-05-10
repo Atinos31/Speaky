@@ -10,7 +10,7 @@ contact page mockup![display from different screen shots](assets/images/contactm
 ---
 This is a text to speech application created mainly for non verbal children with learning issues.
 Its main goal is to help families to better understand the basic needs and feeling of their children in real time thereby simplifying their daily lives.
-<<<<<<< HEAD
+
 
 * I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device.
 
