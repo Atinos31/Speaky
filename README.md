@@ -96,7 +96,7 @@ _Click [Here](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) 
 
    - Create responsive UI with picture buttons
    - Speaks the text when button clicked
-   - Drop down custom text to speech
+   - Drop down custom text to speech modal to choose voices and accents.
    - Speaks the text typed in
    - Change voices and accents
 
@@ -241,7 +241,7 @@ As part of the design process, before starting the project i made initial wirefr
  - responsiveness on desktop size screens.
  - voicechange function not working on iphone8....more testing needed
  - confirmation pop up message after submit button pressed, having touble with that.- ## solved
- - select voices doesnt change voices.
+ - select voices not well incoporatated with the images and type area sections.
 # [Deployment](#depployment)
 
    ### GitHub Pages
