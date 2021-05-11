@@ -113,7 +113,8 @@ function getVoices() {
     voices.forEach(voice => {
         const option = document.createElement('option');
 
-        option.value = voice.name;
+        option.value = option.value;
+        console.log(option.value);
         option.innerText = `${voice.name} ${voice.lang}`;
         voiceSelect.appendChild(option);
     });
@@ -129,8 +130,12 @@ function speakText() {
 }
 
 //set voice
-function setVoice(e) {
-    message.voice = voices.find(voice.name === e.target.value);
+function setVoice() {
+    console.log(e.target.value);
+    console.log(this.value);
+    message.voice = voices.find(option.value);
+
+
 }
 //when voices are changed
 speechSynthesis.addEventListener('voiceschanged', getVoices);
