@@ -1,15 +1,19 @@
+// Initialize SpeechSynthesis API
+const synth = window.speechSynthesis;
+
+// DOM Elements
+const textForm = document.querySelector('form');
+const textInput = document.querySelector('#text-input');
+const voiceSelect = document.querySelector('#voice-select');
+const body = document.querySelector('body');
 const main = document.querySelector('main');
-const voiceSelect = document.getElementById('voices');
 const textarea = document.getElementById('text');
-const readBtn = document.getElementById('read');
+const readBtn = document.getElementById('readBtn');
 const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
-
 // second  text area and speak button
 const textArea = document.getElementById('textInput');
-const speakBtn = document.getElementById('speakBtn')
-
-//const tts = window.speechSynthesis;
+const speakBtn = document.getElementById('speakBtn');
 
 //creating an array of data to add images
 const data = [{
@@ -81,15 +85,15 @@ function createBox(item) {
 
     box.classList.add('box');
     box.innerHTML = `
-    <img src="${image}" alt="${text}" />
-    <p class="info">${text}</p>`;
+<img src="${image}" alt="${text}" />
+<p class="info">${text}</p>`;
 
     // addition of speak event
     box.addEventListener('click', () => {
         setTextMessage(text);
         speakText();
 
-        //adding active effect to the image box
+        //adding active effect/class thats is style in css, to the image box
         box.classList.add('active');
         //remove the  active class right after it been clicked or used
         setTimeout(() => box.classList.remove('active'), 1000);
@@ -97,28 +101,38 @@ function createBox(item) {
     });
     main.appendChild(box);
 }
-// Initiate speech synthesis
-const message = new SpeechSynthesisUtterance();
 
 
-// array  to store voices from speech synthesis api
+
+//Browser identifier
+// Firefox 1.0+
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+// Chrome 1+
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+// Init voices array
 let voices = [];
 
-function getVoices() {
-    voices = speechSynthesis.getVoices();
+const getVoices = () => {
+    voices = synth.getVoices();
 
-
-
-    //loop through voices
+    // Loop through voices and create an option for each one
     voices.forEach(voice => {
+        // Create option element
         const option = document.createElement('option');
+        // Fill option with voice and language
+        option.textContent = voice.name + '(' + voice.lang + ')';
 
-        option.value = option.value;
-        console.log(option.value);
-        option.innerText = `${voice.name} ${voice.lang}`;
+        // Set needed option attributes
+        option.setAttribute('data-lang', voice.lang);
+        option.setAttribute('data-name', voice.name);
         voiceSelect.appendChild(option);
     });
-}
+};
+
+const message = new SpeechSynthesisUtterance;
+
 // setting the text function
 function setTextMessage(text) {
     message.text = text;
@@ -128,19 +142,74 @@ function setTextMessage(text) {
 function speakText() {
     speechSynthesis.speak(message);
 }
-
-//set voice
-function setVoice() {
-    console.log(e.target.value);
-    console.log(this.value);
-    message.voice = voices.find(option.value);
-
-
+//Line 35, 36 causes voice list duplication
+getVoices();
+if (synth.onvoiceschanged !== undefined) {
+    synth.onvoiceschanged = getVoices;
 }
-//when voices are changed
-speechSynthesis.addEventListener('voiceschanged', getVoices);
 
-// add event listener tp speak button
+//Fix for duplication, run code depending on the browser
+if (isFirefox) {
+    getVoices();
+}
+if (isChrome) {
+    if (synth.onvoiceschanged !== undefined) {
+        synth.onvoiceschanged = getVoices;
+    }
+}
+
+// Speak
+const speak = () => {
+    // Check if speaking
+    if (synth.speaking) {
+        console.error('Already speaking...');
+        return;
+    }
+    /*if (textInput.value !== '') {
+    // Add background animation
+    body.style.backgroundSize = '100% 100%';*/
+
+    // Get speak text
+    const speakText = new SpeechSynthesisUtterance(textInput.value);
+
+    // Speak end
+    speakText.onend = e => {
+        console.log('Done speaking...');
+
+    };
+
+    // Speak error
+    speakText.onerror = e => {
+        console.error('Something went wrong');
+    };
+
+    // Selected voice
+    const selectedVoice = voiceSelect.selectedOptions[0].getAttribute(
+        'data-name');
+
+    // Loop through voices
+    voices.forEach(voice => {
+        if (voice.name === selectedVoice) {
+            speakText.voice = voice;
+        }
+    });
+
+    // Speak
+    synth.speak(speakText);
+};
+
+// EVENT LISTENERS
+
+// Text form submit
+textForm.addEventListener('submit', e => {
+    e.preventDefault();
+    speak();
+    textInput.blur();
+});
+
+// Voice select change
+voiceSelect.addEventListener('change', e => speak());
+
 
 //toggle text box functionality
 toggleBtn.addEventListener('click', () =>
@@ -159,13 +228,7 @@ readBtn.addEventListener('click', () => {
 
 });
 speakBtn.addEventListener('click', () => {
-    setTextMessage(textArea.value);
+    setTextMessage(textarea.value);
     speakText();
 
 });
-//change voice
-voiceSelect.addEventListener('change', setVoice);
-
-
-//getVoices function called
-getVoices();

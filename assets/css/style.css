@@ -243,7 +243,7 @@
         text-align: center;
     }
     
-    .floating-btn {
+    .float-btn {
         border-radius: 26.5px;
         background-color: #001F61;
         border: 1px solid #001F61;
@@ -258,7 +258,7 @@
         z-index: 999;
     }
     
-    .floating-btn:hover {
+    .float-btn:hover {
         background-color: #ffffff;
         color: #001F61;
     }
