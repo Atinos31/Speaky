@@ -1,18 +1,15 @@
 // Initialize SpeechSynthesis API
-const synth = window.speechSynthesis;
+const speechSynthesis = window.speechSynthesis;
 
 // DOM Elements
 const textForm = document.querySelector('form');
 const textInput = document.querySelector('#text-input');
 const voiceSelect = document.querySelector('#voice-select');
-const body = document.querySelector('body');
 const main = document.querySelector('main');
 const textarea = document.getElementById('text');
 const readBtn = document.getElementById('readBtn');
 const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
-// second  text area and speak button
-const textArea = document.getElementById('textInput');
 const speakBtn = document.getElementById('speakBtn');
 
 //creating an array of data to add images
@@ -115,7 +112,7 @@ var isChrome = !!window.chrome && !!window.chrome.webstore;
 let voices = [];
 
 const getVoices = () => {
-    voices = synth.getVoices();
+    voices = speechSynthesis.getVoices();
 
     // Loop through voices and create an option for each one
     voices.forEach(voice => {
@@ -144,8 +141,8 @@ function speakText() {
 }
 //Line 35, 36 causes voice list duplication
 getVoices();
-if (synth.onvoiceschanged !== undefined) {
-    synth.onvoiceschanged = getVoices;
+if (speechSynthesis.onvoiceschanged !== undefined) {
+    speechSynthesis.onvoiceschanged = getVoices;
 }
 
 //Fix for duplication, run code depending on the browser
@@ -153,15 +150,15 @@ if (isFirefox) {
     getVoices();
 }
 if (isChrome) {
-    if (synth.onvoiceschanged !== undefined) {
-        synth.onvoiceschanged = getVoices;
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = getVoices;
     }
 }
 
 // Speak
 const speak = () => {
     // Check if speaking
-    if (synth.speaking) {
+    if (speechSynthesis.speaking) {
         console.error('Already speaking...');
         return;
     }
@@ -195,7 +192,7 @@ const speak = () => {
     });
 
     // Speak
-    synth.speak(speakText);
+    speechSynthesis.speak(speakText);
 };
 
 // EVENT LISTENERS
@@ -209,6 +206,8 @@ textForm.addEventListener('submit', e => {
 
 // Voice select change
 voiceSelect.addEventListener('change', e => speak());
+speechSynthesis.addEventListener('voiceschanged', getVoices);
+
 
 
 //toggle text box functionality
@@ -227,6 +226,7 @@ readBtn.addEventListener('click', () => {
     speakText();
 
 });
+// speak btn
 speakBtn.addEventListener('click', () => {
     setTextMessage(textarea.value);
     speakText();
