@@ -23,6 +23,7 @@
         font-size: 1.2rem;
     }
     
+    h1,
     h2 {
         font-family: 'Abril Fatface', sans-serif;
         font-weight: 800;
@@ -31,14 +32,15 @@
         margin: 0 auto;
     }
     
-    h3 {
+    h3,
+    h4 {
         font-family: 'Abril Fatface', sans-serif;
     }
     /* header/homepage */
     
     .header {
         position: sticky;
-        box-shadow: 5px 5px 8px 0 #222;
+        box-shadow: 5px 5px 5px 0 #222;
         height: 80vh;
         width: 100%;
         background-image: url('../images/bg1.jpg');
@@ -173,20 +175,24 @@
     .type-area {
         padding: 15px 0px;
         text-align: center;
-        color: #333;
-        background: rgb(226, 222, 222);
-        margin-top: 0;
+        color: #fafafa;
+        background: #333;
+        margin-bottom: 15px;
+        box-shadow: 5px 5px 8px 0 #333;
+        text-transform: capitalize;
+        margin-top: 5px;
     }
     
     .txt-box {
-        background: rgba(0, 0, 0, 0.9);
+        background: #fafafa;
         width: 80%;
         border-radius: 10px;
-        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2);
         outline: 0;
         position: relative;
-        color: #fff;
-        text-align: center;
+        color: #333;
+        text-align: left;
+        font-weight: bold;
     }
     /* speak button*/
     
@@ -198,7 +204,7 @@
         padding: 15px 30px;
         background: darkgreen;
         color: #fff;
-        border: 1px solid #fff;
+        border: 1px solid darkgreen;
         border-radius: 10px;
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
         transition: .6s;
@@ -275,7 +281,8 @@
     
     .float-btn:hover {
         background-color: #ffffff;
-        color: #001F61;
+        color: #000;
+        text-decoration: none;
     }
     
     .floating-btn:focus {
@@ -286,6 +293,7 @@
         background-color: #333;
         color: #fafafa;
         padding-top: 2px;
+        margin-top: 10px;
     }
     
     .footer-divider {
