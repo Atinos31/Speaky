@@ -162,9 +162,6 @@ const speak = () => {
         console.error('Already speaking...');
         return;
     }
-    /*if (textInput.value !== '') {
-    // Add background animation
-    body.style.backgroundSize = '100% 100%';*/
 
     // Get speak text
     const speakText = new SpeechSynthesisUtterance(textInput.value);
@@ -196,7 +193,6 @@ const speak = () => {
 };
 
 // EVENT LISTENERS
-
 // Text form submit
 textForm.addEventListener('submit', e => {
     e.preventDefault();
@@ -207,8 +203,6 @@ textForm.addEventListener('submit', e => {
 // Voice select change
 voiceSelect.addEventListener('change', e => speak());
 speechSynthesis.addEventListener('voiceschanged', getVoices);
-
-
 
 //toggle text box functionality
 toggleBtn.addEventListener('click', () =>
