@@ -205,6 +205,7 @@
         background: green;
         box-shadow: 0 0 0 5px #fff, 0 0 0 10px green;
         border: none;
+        outline: none;
         /* removed a black border on hover*/
     }
     
@@ -295,7 +296,7 @@
         main {
             grid-template-columns: repeat(2, 1fr);
         }
-        .readbtn {
+        .speakBtn {
             display: inline-block;
             top: 0;
             right: 0;
