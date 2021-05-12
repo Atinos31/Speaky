@@ -66,7 +66,7 @@ const data = [{
     }
 ];
 
-//loop through
+//image and text section
 
 data.forEach(createBox);
 
