@@ -23,7 +23,7 @@
         font-size: 1.2rem;
     }
     
-    h1 {
+    h2 {
         font-family: 'Abril Fatface', sans-serif;
         font-weight: 800;
         letter-spacing: 1px;
@@ -31,7 +31,7 @@
         margin: 0 auto;
     }
     
-    h2 {
+    h3 {
         font-family: 'Abril Fatface', sans-serif;
     }
     /* header/homepage */
@@ -57,9 +57,15 @@
         text-align: left;
     }
     
+    .logo span {
+        color: #000;
+        font-family: 'Lato', sans-serif;
+        font-family: 12px;
+    }
+    
     .fa-comments:hover {
-        color: orangered;
-        transform: scale(1.2);
+        color: darkgreen;
+        transform: scale(1.1);
         cursor: pointer;
     }
     /* buttons */
@@ -274,6 +280,16 @@
     
     .floating-btn:focus {
         outline: none;
+    }
+    
+    .footer {
+        background-color: #333;
+        color: #fafafa;
+        padding-top: 2px;
+    }
+    
+    .footer-divider {
+        background-color: #fafafa;
     }
     /* media queries*/
     
