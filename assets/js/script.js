@@ -3,7 +3,7 @@ const speechSynthesis = window.speechSynthesis;
 
 // DOM Elements
 const textForm = document.querySelector('form');
-const textInput = document.querySelector('#text-input');
+const textInput = document.querySelector('#textInput');
 const voiceSelect = document.querySelector('#voice-select');
 const main = document.querySelector('main');
 const textarea = document.getElementById('text');
@@ -159,7 +159,7 @@ if (isChrome) {
 const speak = () => {
     // Check if speaking
     if (speechSynthesis.speaking) {
-        console.error('Already speaking...');
+        alert('Already speaking...');
         return;
     }
 
@@ -174,7 +174,7 @@ const speak = () => {
 
     // Speak error
     speakText.onerror = e => {
-        console.error('Something went wrong');
+        alert('Something went wrong');
     };
 
     // Selected voice
@@ -215,14 +215,15 @@ closeBtn.addEventListener('click', () =>
 );
 
 //read button functionality
+
 readBtn.addEventListener('click', () => {
-    setTextMessage(textarea.value);
+    setTextMessage(value);
     speakText();
 
 });
 // speak btn
 speakBtn.addEventListener('click', () => {
-    setTextMessage(textarea.value);
-    speakText();
+    setTextMessage(value);
+    speak();
 
 });
