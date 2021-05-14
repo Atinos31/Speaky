@@ -7,10 +7,10 @@ const textInput = document.querySelector('#textInput');
 const voiceSelect = document.querySelector('#voice-select');
 const main = document.querySelector('main');
 const textarea = document.getElementById('text');
-const readBtn = document.getElementById('readBtn');
+const readBtn = document.getElementById('read');
 const toggleBtn = document.getElementById('toggle');
 const closeBtn = document.getElementById('close');
-const speakBtn = document.getElementById('speakBtn');
+const speakBtn = document.getElementById('speak');
 
 //creating an array of data to add images
 const data = [{
@@ -108,7 +108,7 @@ var isFirefox = typeof InstallTrigger !== 'undefined';
 // Chrome 1+
 var isChrome = !!window.chrome && !!window.chrome.webstore;
 
-// Init voices array
+// store voices 
 let voices = [];
 
 const getVoices = () => {
@@ -128,7 +128,7 @@ const getVoices = () => {
     });
 };
 
-const message = new SpeechSynthesisUtterance;
+const message = new SpeechSynthesisUtterance(textForm.value);
 
 // setting the text function
 function setTextMessage(text) {
@@ -159,12 +159,13 @@ if (isChrome) {
 const speak = () => {
     // Check if speaking
     if (speechSynthesis.speaking) {
-        alert('Already speaking...');
+        console.log('Already speaking...');
         return;
     }
 
     // Get speak text
     const speakText = new SpeechSynthesisUtterance(textInput.value);
+
 
     // Speak end
     speakText.onend = e => {
@@ -174,7 +175,7 @@ const speak = () => {
 
     // Speak error
     speakText.onerror = e => {
-        alert('Something went wrong');
+        alert('Something went wrong, please refresh the page');
     };
 
     // Selected voice
@@ -223,7 +224,6 @@ readBtn.addEventListener('click', () => {
 });
 // speak btn
 speakBtn.addEventListener('click', () => {
-    setTextMessage(value);
-    speak();
-
+    setTextMessage(textarea.value);
+    speakText();
 });
