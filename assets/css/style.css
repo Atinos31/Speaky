@@ -213,7 +213,8 @@
         }
         
         .readbtn:hover,
-        .btn-success:hover {
+        .btn-success:hover,
+        .btn-toggle {
             color: #fff;
             background: green;
             box-shadow: 0 0 0 5px #fff, 0 0 0 10px green;
