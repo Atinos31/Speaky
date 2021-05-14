@@ -22,10 +22,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" />
     <!-- Custom CSS style sheet -->
     <link href="assets/css/style.css" rel="stylesheet">
-
     <title>Text to Speech app
     </title>
-
 </head>
 
 <body>
@@ -33,33 +31,29 @@
     <section class="col-12 header">
         <h1 class="logo">
             <a href="index.html">
-                <i class="far fa-comments" aria-label="logo that leads back to the homepage">
-         
-                <span class="logo-title">Speaky</span>
-                </i> </a>
+                <i class="far fa-comments">
+        <span class="logo-title">Speaky</span>
+        </i> </a>
         </h1>
         <div class="container font-container text-center">
             <h2 class="mx-3">Communicate with your friends & family
             </h2>
             <button id="toggle" class="btn btn-toggle mt-4">Choose Voice
-            </button>
+        </button>
         </div>
     </section>
     <!--toggle /chose voice section-->
     <section class="choose-voice">
-        <div id="text-box" class="text-box ">
+        <div id="text-box" class="text-box">
             <div id="close" class="close">X
             </div>
             <h3>Select Preferred Voice
             </h3>
             <form class="mb-5">
-
-
                 <select id="voice-select"></select>
-                <textarea id="textInput" placeholder="Enter some text in here and press the play button to hear it "></textarea>
+                <textarea id="textInput" placeholder="Enter some text in here and press the play button to hear it"></textarea>
                 <button class="readbtn" id="read">Read</button>
-        </div>
-        </form>
+            </form>
         </div>
     </section>
     <!--type area-->
@@ -69,63 +63,61 @@
                 <div class="col-12 mb-2">
                     <h4>
                         <i class="fas fa-edit">
-                        </i> Type Something...
+              </i> Type Something...
                     </h4>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12">
                     <textarea placeholder="Type what you want to say..." id="text" class="txt-box">
-                  </textarea>
-                    <button id="speak" class=" btn btn-success btn-block "><i class="fas fa-assistive-listening-systems "></i>Speak
-                  </button>
+            </textarea>
+                    <button id="speak" class=" btn btn-success btn-block "><i class="fas fa-assistive-listening-systems"></i>Speak
+            </button>
                 </div>
             </div>
         </div>
     </section>
     <!--image and text section-->
-
     <main>
     </main>
     <!--footer section-->
-    <section class="footer ">
-        <div class="row mt-5 text-center text-white ">
-            <div class="col-12 col-md-4 ">
-
+    <div class="footer">
+        <div class="row mt-5 text-center text-white">
+            <div class="col-12 col-md-4">
                 <small>@ Copyright
-                    <a class="hvr-grow " style="color:red; " href="404.html " target="_blank " rel="noopener " aria-label="throws a 404 error "> atinos31
-                    </a> 2021
-                    </small>
-
+          <a class="hvr-grow " style="color:red;" href="404.html " target="_blank" rel="noopener noreferrer" aria-label="throws a 404 error "> atinos31
+          </a> 2021
+          </small>
             </div>
-            <div class=" col-12 col-md-4 ">
-                <div class="social-links ">
-                    <a href="https://www.linkedin.com/in/sandra-atino-459a231a9/ " target="_blank " rel="noopener " aria-label="opens linkedin page in a new tab ">
-                        <i class="fab fa-linkedin-in fa-2x hvr-pulse-grow ">
-               </i>
+            <div class=" col-12 col-md-4">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sandra-atino-459a231a9/" target="_blank" rel="noopener noreferrer" aria-label="opens linkedin page in a new tab">
+                        <i class="fab fa-linkedin-in fa-2x hvr-pulse-grow">
+            </i>
                     </a>
-                    <a href="https://www.youtube.com/watch?v=KhT0NxCayEg " target="_blank " rel="noopener " aria-label="opens youtube page in a new tab ">
+                    <a href="https://www.youtube.com/watch?v=KhT0NxCayEg " target="_blank" rel="noopener noreferrer" aria-label="opens youtube page in a new tab ">
                         <i class="fab fa-youtube fa-2x hvr-pulse-grow ">
-               </i>
+            </i>
                     </a>
-                    <a href="https://github.com/Atinos31 " target="_blank " rel="noopener " aria-label="opens github page in a new tab ">
-                        <i class="fab fa-github fa-2x hvr-pulse-grow ">
-               </i>
+                    <a href="https://github.com/Atinos31 " target="_blank" rel="noopener noreferrer" aria-label="opens github page in a new tab ">
+                        <i class="fab fa-github fa-2x hvr-pulse-grow">
+            </i>
                     </a>
                 </div>
             </div>
-            <div class="col-12 col-md-4 ">
+            <div class="col-12 col-md-4">
                 <div class="feedback-form ">
-                    <a href="feedback.html " class="float-btn hvr-pulse-grow " aria-label="opens a new contact page ">Contact Us <i class="fas fa-arrow-right "></i>
-                </a>
+                    <a href="feedback.html " class="float-btn hvr-pulse-grow " aria-label="opens a new contact page" target="_blank">Contact Us <i class="fas fa-arrow-right "></i>
+            </a>
                 </div>
             </div>
         </div>
-
-        <hr class="footer-divider ">
-        <!--copyright-->
-
-    </section>
-    <script src="assets/js/script.js "></script>
+        <hr class="footer-divider"> >
+        <div>
+            <p class="text-muted"><small>Note: This app uses the Web Speech API which is experimental and may not fully work in some versions of certain browsers</small></p>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
-</html
+
+</html>
