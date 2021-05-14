@@ -74,7 +74,7 @@
         }
         /* buttons */
         
-        .btn-sucess:active {
+        .btn-success:active {
             transform: scale(0.99);
             opacity: 0.5;
             color: #fff;
@@ -83,13 +83,6 @@
         .btn-success:focus,
         select:focus {
             outline: 0;
-        }
-        
-        .btn-success:hover {
-            text-decoration: none;
-            color: #fff;
-            background: green;
-            box-shadow: 0 0 0 5px #fff, 0 0 0 10px green;
         }
         
         .btn-toggle {
