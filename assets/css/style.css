@@ -338,7 +338,7 @@
             }
             .btn-success {
                 display: block;
-                margin-top: 8px;
+                margin-top: 3px;
                 font-size: 15px;
             }
             h1 {
@@ -354,14 +354,14 @@
             .social-links {
                 display: none;
             }
-            .social-links {
-                display: none;
-            }
             .row {
                 min-height: 100%;
                 padding-bottom: 20px;
             }
             span .logo-title {
                 display: none;
+            }
+            .feedback-form {
+                margin-top: 5px;
             }
         }
