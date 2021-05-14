@@ -336,9 +336,9 @@
             main {
                 grid-template-columns: 1fr;
             }
-            .btn {
+            .btn-success {
                 display: block;
-                top: 0;
+                margin-top: 8px;
                 font-size: 15px;
             }
             h1 {
@@ -353,11 +353,6 @@
             }
             .social-links {
                 display: none;
-            }
-            .speakBtn {
-                display: block;
-                top: 0;
-                right: 0;
             }
             .social-links {
                 display: none;
