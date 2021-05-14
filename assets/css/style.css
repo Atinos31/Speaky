@@ -354,11 +354,9 @@
             .row {
                 min-height: 100%;
                 padding-bottom: 20px;
+                margin-bottom: 10px;
             }
             span .logo-title {
                 display: none;
-            }
-            .float-btn {
-                margin-top: 5px;
             }
         }
