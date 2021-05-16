@@ -47,7 +47,7 @@
             <h2> Please let us know
             </h2>
         </div>
-        <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
+        <form onsubmit="return sendForm(this),alert('message sent');" method="POST" id="form" name="contact-form">
             <div class="form-group">
                 <label for="for_name">Full Names</label>
                 <input type="text" id="for_name" name="name" autocomplete="off" placeholder="Enter Your Full Names..." class="form-control" required>
@@ -105,20 +105,13 @@
         </div>
         <!--modal-->
         <!-- The Modal -->
-        <div id="modal-sent" class="modal-window hide">
+        <div id="modal-sent" class="modal-window">
             <div class="form-response-container">
                 <p class="mg-bottom">Your message has been sent!</p>
                 <button class="btn btn-form" data-close="modal-sent">Close</button>
             </div>
         </div>
-        <!-- error message modal -->
-        <div id="modal-error" class="modal-window hide">
-            <div class="form-response-container">
-                <p>Something went wrong:</p>
-                <button class="btn btn-form" data-close="modal-sent">Close</button>
-            </div>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <script src="assets/js/sendEmail.js "></script>
 </body>
 
