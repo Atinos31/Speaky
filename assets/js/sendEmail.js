@@ -16,7 +16,7 @@ emailjs.send("gmail", "template_04ew0co", {
     );
 return false; // To block from loading a new page
 
-}
+}*/
 
 //modal after pressing submit button on feedback form from w3schools
 // Get the modal
@@ -43,7 +43,7 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}*/
+} * /
 $(document).ready(function() {
     //https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_submit_prevent
     $("#form").submit(function(event) {
@@ -60,6 +60,6 @@ $(document).ready(function() {
                 $('#modal-error').removeClass("hide");
                 $("#form")[0].reset();
             });
-        $("#modal-form").addClass("hide");
+        $("#form").addClass("hide");
     });
 });
