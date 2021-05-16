@@ -53,7 +53,7 @@ $(document).ready(function() {
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 //Display modal success
-                $('#myModal').removeClass("hide");
+                $('#modal-sent').removeClass("hide");
                 $("#form")[0].reset();
             }, () => {
                 //Display modal error
