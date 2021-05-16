@@ -20,7 +20,7 @@ return false; // To block from loading a new page
 
 //modal after pressing submit button on feedback form from w3schools
 // Get the modal
-const modal = document.getElementById("myModal");
+const modal = document.getElementById("modal-sent");
 
 // Get the button that opens the modal
 const btn = document.getElementById("myBtn");
