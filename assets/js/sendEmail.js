@@ -1,20 +1,20 @@
-function sendForm(contactForm) {
-    emailjs.send("gmail", "template_04ew0co", {
-            "from_name": contactForm.name.value,
-            "from_email": contactForm.emailaddress.value,
-            "feedback_summary": contactForm.feedbacksummary.value
-        })
-        .then(
-            function(response) {
-                console.log('SUCCESS!', response.status, response.text)
+/*function sendForm(contactForm) {
+emailjs.send("gmail", "template_04ew0co", {
+        "from_name": contactForm.name.value,
+        "from_email": contactForm.emailaddress.value,
+        "feedback_summary": contactForm.feedbacksummary.value
+    })
+    .then(
+        function(response) {
+            console.log('SUCCESS!', response.status, response.text)
 
-            },
-            function(error) {
-                console.log('FAILED', error);
+        },
+        function(error) {
+            console.log('FAILED', error);
 
-            }
-        );
-    return false; // To block from loading a new page
+        }
+    );
+return false; // To block from loading a new page
 
 }
 
@@ -43,4 +43,23 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+}*/
+$(document).ready(function() {
+    //https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_submit_prevent
+    $("#form").submit(function(event) {
+        event.preventDefault();
+        const serviceID = "gmail";
+        const templateID = "template_04ew0co";
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                //Display modal success
+                $('#myModal').removeClass("hide");
+                $("#form")[0].reset();
+            }, () => {
+                //Display modal error
+                $('#modal-error').removeClass("hide");
+                $("#form")[0].reset();
+            });
+        $("#modal-form").addClass("hide");
+    });
+});
