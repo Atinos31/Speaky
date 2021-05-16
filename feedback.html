@@ -105,11 +105,17 @@
         </div>
         <!--modal-->
         <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content ">
-                <span class="close ">&times;</span>
-                <p><i class="fas fa-check-circle "></i> Your Message Has Been Sent!</p>
+        <div id="modal-sent" class="modal-window hide">
+            <div class="form-response-container">
+                <p class="mg-bottom">Your message has been sent!</p>
+                <button class="btn btn-form" data-close="modal-sent">Close</button>
+            </div>
+        </div>
+        <!-- error message modal -->
+        <div id="modal-error" class="modal-window hide">
+            <div class="form-response-container">
+                <p>Something went wrong:</p>
+                <button class="btn btn-form" data-close="modal-sent">Close</button>
             </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
