@@ -7,7 +7,7 @@ function sendForm(contactForm) {
         .then(
             function(response) {
                 console.log('SUCCESS!', response.status, response.text);
-                alert('message sent');
+
 
             },
             function(error) {
