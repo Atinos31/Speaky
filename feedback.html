@@ -40,38 +40,57 @@
         </h1>
     </div>
     <!--form -->
-    <section id="contact">
+    <section id="container">
         <div class="contact-title">
             <h1 class="text-center text-black"> Got Some Feedback?</h1>
         </div>
-        <form onsubmit="return sendForm(this);" method="POST" id="submit-button" name="contact-form">
-            <div class="container mt-10">
-                <div class="row contact-form">
-                    <div class="col-lg-6 form-fieldset ">
-                        <input type="text " class="input-text " id="for_name " name="name" required>
-                        <label for="for_name" class="label"><i class="fas fa-user"></i> Full Names
-              </label>
-                    </div>
-                    <div class="col-lg-6 form-fieldset ">
-                        <input type="email" class="input-text" autocomplete="off " id="emailaddress" name="emailaddress" required>
-                        <label for="email " class="label"><i class="fas fa-envelope"></i> Email Address
-              </label>
-                    </div>
-
-                    <div class="col-lg-12 form-fieldset ">
-                        <input type="text " class="input-text " id="feedbacksummary " name="message " required>
-                        <label for="feedbacksummary " class="label ">Message
-              </label>
-                    </div>
-                    <div class="col-lg-12 form-fieldset ">
-                        <button type="submit-button" class="submit-btn" value="Submit ">Submit</button>
-                    </div>
-                </div>
-            </div>
+        <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
+            <fieldset>
+                <legend>
+                    Your Details:
+                </legend>
+                <label for="for_name">Full Names:
+                <input type="text" id="for_name" name="for_name" size="30" maxlength="100" required>
+                </label>
+                <br/>
+                <label for="emailaddress">Email Address:
+                    <input type="text" name="emailaddress" id="emailaddress" size="30" maxlength="100" required>
+                </label>
+                <br/></fieldset>
+            <br/>
+            <fieldset>
+                <legend>Your Review:</legend>
+                <p><label for="hear-about">How did you hear about Us?</label>
+                    <select name="referrer" id="hear-about">
+                        <option value="google">Google</option>
+                        <option value="friend">Friend</option>
+                        <option value="advert">Advert</option>
+                        <option value="other">Other</option>
+                    </select></p>
+                <p>Would you visit again?<br/>
+                    <label>
+                        <input type="radio" name="rating" value="yes"/> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="no"> No
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="maybe"> Maybe
+                    </label>
+                </p>
+                <p>
+                    <label for="feedbacksummary">Comments:</label><br/>
+                    <textarea name="feedbacksummary" id="" cols="40" rows="4" id="feedbacksummary" required></textarea>
+                </p>
+                <label>
+                    <input type="checkbox" name="subscribe" checked="checked"/> Sign me up fpr email updates
+                </label>
+                <br/><input type="submit" value="submit review" />
+            </fieldset>
         </form>
     </section>
     <div class="footer ">
-        <div class="row mt-5 text-center text-white ">
+        <div class="row mt-5 text-center text-black">
             <div class="col-12 col-md-4 ">
                 <div class="copyright ">
                     <small>@ Copyright 
@@ -81,7 +100,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 ">
-                <div class="social-links ">
+                <div class="social-links text-black-50">
                     <a href="https://www.linkedin.com/in/sandra-atino-459a231a9/ " target="_blank " rel="noopener " aria-label="opens linkedin page in a new tab ">
                         <i class="fab fa-linkedin-in fa-2x hvr-pulse-shrink ">
                   </i>
@@ -97,29 +116,25 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 ">
-                <div class="homepage "> <a href="index.html " class="float-btn hvr-pulse-shrink " aria-label="link that leads back to the homepage ">Home <i class="fas fa-hand-point-left fa-2x "></i>
+                <div class="homepage text-black"> <a href="index.html " class="float-btn hvr-pulse-shrink " aria-label="link that leads back to the homepage ">Home <i class="fas fa-hand-point-left fa-2x "></i>
                   </a>
                 </div>
             </div>
-            <hr class="footer-divider ">
-            <div>
-                <p class="text-muted text-center "><small>Note: This app uses the Web Speech API which is experimental and may not fully work in some versions of certain browsers</small></p>
-            </div>
-        </div>
-        <!--modal-->
-        <!-- The Modal -->
-        <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <h3 class="modal-title">Merci !</h3>
+
+            <!--modal-->
+            <!-- The Modal -->
+            <div class="modal fade " id="registration " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
+                <div class="modal-dialog " role="document ">
+                    <div class="modal-content ">
+                        <div class="modal-body ">
+                            <h3 class="modal-title ">Thank you</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="assets/js/sendEmail.js "></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+            <script src="assets/js/sendEmail.js "></script>
 </body>
 
 </html>
