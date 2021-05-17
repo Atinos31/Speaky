@@ -20,3 +20,6 @@ function sendForm(contactForm) {
     return false; // To block from loading a new page
 
 }
+
+
+//animate buttonvar animateButton = function(e) {
