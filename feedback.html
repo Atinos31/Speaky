@@ -44,7 +44,7 @@
         <div class="contact-title">
             <h1 class="text-center text-white"> Got Some Feedback?</h1>
         </div>
-        <form onsubmit="return sendForm(this);" method="POST" id="form " name="contact-form">
+        <form onsubmit="return sendForm(this);" method="POST" id="submit-button" name="contact-form">
             <div class="container mt-10">
                 <div class="row contact-form">
                     <div class="col-lg-6 form-fieldset ">
@@ -108,8 +108,17 @@
         </div>
         <!--modal-->
         <!-- The Modal -->
+        <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3 class="modal-title">Merci !</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="assets/js/sendEmail.js "></script>
 </body>
 

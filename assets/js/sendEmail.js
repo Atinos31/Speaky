@@ -18,3 +18,15 @@ function sendForm(contactForm) {
     return false; // To block from loading a new page
 
 }
+//trigger when form submitted
+/*$("#submit-button").submit(function(e) {
+$("#registration").modal('show');
+return false;
+}); */
+
+$(document).ready(function() {
+    $('#submit-button').on('submit', function(e) {
+        $('#registration').modal('show');
+        e.preventDefault();
+    });
+});
