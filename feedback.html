@@ -42,55 +42,58 @@
     <!--form -->
     <section id="container">
         <div class="contact-title">
-            <h1 class="text-center text-black"> Got Some Feedback?</h1>
+            <h1 class="text-center text-white mb-3"> Got Some Feedback?</h1>
         </div>
         <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
-            <fieldset>
-                <legend>
-                    Your Details:
-                </legend>
-                <label for="for_name">Full Names:
-                <input type="text" id="for_name" name="for_name" size="30" maxlength="100" required>
+            <div class="col-12 col-lg-6">
+                <fieldset>
+                    <legend>
+                        Your Details:
+                    </legend>
+                    <label for="for_name">Full Names:
+                <input type="text" id="for_name" name="for_name"  placeholder="Full names..."required>
                 </label>
+                    <br/>
+                    <label for="emailaddress">Email Address:
+                    <input type="text" name="emailaddress" id="emailaddress"placeholder="Email address..." required>
+                </label>
+                    <br/></fieldset>
                 <br/>
-                <label for="emailaddress">Email Address:
-                    <input type="text" name="emailaddress" id="emailaddress" size="30" maxlength="100" required>
-                </label>
-                <br/></fieldset>
-            <br/>
-            <fieldset>
-                <legend>Your Review:</legend>
-                <p><label for="hear-about">How did you hear about Us?</label>
-                    <select name="referrer" id="hear-about">
+                <fieldset>
+                    <legend>Your Review:</legend>
+                    <p><label for="hear-about">How did you hear about Us?</label>
+                        <select name="referrer" id="hear-about">
                         <option value="google">Google</option>
                         <option value="friend">Friend</option>
                         <option value="advert">Advert</option>
                         <option value="other">Other</option>
                     </select></p>
-                <p>Would you visit again?<br/>
-                    <label>
+                    <p>Would you visit again?<br/>
+                        <label>
                         <input type="radio" name="rating" value="yes"/> Yes
                     </label>
-                    <label>
+                        <label>
                         <input type="radio" name="rating" value="no"> No
                     </label>
-                    <label>
+                        <label>
                         <input type="radio" name="rating" value="maybe"> Maybe
                     </label>
-                </p>
-                <p>
-                    <label for="feedbacksummary">Comments:</label><br/>
-                    <textarea name="feedbacksummary" id="" cols="40" rows="4" id="feedbacksummary" required></textarea>
-                </p>
-                <label>
+                    </p>
+                    <p>
+                        <label for="feedbacksummary">Comments:</label><br/>
+                        <textarea name="feedbacksummary" id="feedbacksummary" required></textarea>
+                    </p>
+                    <label>
                     <input type="checkbox" name="subscribe" checked="checked"/> Sign me up fpr email updates
                 </label>
-                <br/><input type="submit" value="submit review" />
-            </fieldset>
+                    <br/>
+                    <input type="submit" class="submit-btn" value="Submit" />
+                </fieldset>
+            </div>
         </form>
     </section>
     <div class="footer ">
-        <div class="row mt-5 text-center text-black">
+        <div class="row mt-5 text-center text-white">
             <div class="col-12 col-md-4 ">
                 <div class="copyright ">
                     <small>@ Copyright 

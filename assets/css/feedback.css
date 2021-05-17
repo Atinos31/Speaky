@@ -1,76 +1,120 @@
-            @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
-            /* global styles*/
-            
-            body {
-                min-height: 100vh;
-                margin: 0;
-                font-family: 'Lato', sans-serif;
-                color: #000;
-            }
-            
-            h1 {
-                font-family: 'Abril Fatface', sans-serif;
-                letter-spacing: 2px;
-            }
-            
-            .logo span {
-                color: #fff;
-                font-family: 'Lato', sans-serif;
-                font-family: 15px;
-            }
-            
-            .fa-comments:hover {
-                transform: scale(1.3);
-                cursor: pointer;
-                transition: .5s ease-in-out;
-                color: blue;
-            }
-            
-            .fa-comments {
-                font-size: 2.8rem;
-                font-weight: 800;
-                color: #fff;
-                z-index: 100;
-                cursor: pointer;
-                text-align: left;
-                top: 5px;
-                left: 5px;
-            }
-            /* FOOTER */
-            
-            .col-12 {
-                margin-bottom: 10px;
-            }
-            
-            .social-links a {
-                color: #333;
-                margin-right: 7px;
-            }
-            
-            .social-links a i:hover {
-                color: blue;
-            }
-            
-            .homepage a {
-                color: #333;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-            
-            .float-btn:hover {
-                color: cadetblue;
-            }
-            
-            .footer-divider {
-                background-color: #fafafa;
-            }
-            /* CONTACT SECTION */
-            /*media queries*/
-            
-            @media screen and (max-width:480px) {
-                .row {
-                    min-height: 100%;
-                    padding-bottom: 20px;
+                @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap');
+                /* global styles*/
+                
+                body {
+                    min-height: 100vh;
+                    margin: 0 auto;
+                    font-family: 'Lato', sans-serif;
+                    color: #000;
+                    background-color: #333;
+                }
+                
+                h1 {
+                    font-family: 'Abril Fatface', sans-serif;
+                    letter-spacing: 2px;
+                }
+                
+                .logo span {
+                    color: #fff;
+                    font-family: 'Lato', sans-serif;
+                    font-family: 15px;
+                }
+                
+                .fa-comments:hover {
+                    transform: scale(1.3);
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+                    color: blue;
+                }
+                
+                .fa-comments {
+                    font-size: 2.8rem;
+                    font-weight: 800;
+                    color: #fff;
+                    z-index: 100;
+                    cursor: pointer;
+                    text-align: left;
+                    top: 5px;
+                    left: 5px;
+                }
+                /*FORM*/
+                
+                form {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    background-color: #fafafa;
+                    max-width: 50%;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                    padding: 5px 0;
+                    color: #111;
+                    font-size: 19px;
+                }
+                
+                textarea {
+                    width: 80%;
+                }
+                
+                legend {
+                    font-weight: bolder;
+                }
+                
+                #emailaddress,
+                #for_name {
+                    width: 250x;
+                    margin-left: 5px;
+                }
+                
+                .submit-btn {
+                    padding: 12px 30px;
+                    border-radius: 8px;
+                    background-color: blue;
+                    color: #fff;
+                }
+                /*FOOTER*/
+                
+                .col-12 {
                     margin-bottom: 10px;
                 }
-            }
+                
+                .social-links a {
+                    color: #fafafa;
+                    margin-right: 7px;
+                }
+                
+                .social-links a i:hover {
+                    color: blue;
+                }
+                
+                .homepage a {
+                    color: #fafafa;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                
+                .float-btn:hover {
+                    color: cadetblue;
+                }
+                
+                .footer-divider {
+                    background-color: #fafafa;
+                }
+                /* CONTACT SECTION */
+                /*media queries*/
+                
+                @media(max-width:768px) {
+                    form {
+                        min-width: 90%;
+                    }
+                }
+                
+                @media screen and (max-width:480px) {
+                    .row {
+                        min-height: 100%;
+                        padding-bottom: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
