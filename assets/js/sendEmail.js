@@ -6,26 +6,17 @@ function sendForm(contactForm) {
         })
         .then(
             function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                alert('Your message has been sent')
+                //console.log('SUCCESS!', response.status, response.text);
+                alert('Your message has been sent');
+                document.getElementById("form").reset();
 
 
             },
             function(error) {
-                console.log('FAILED', error);
-                alert('Oooops! something went wrong')
+                alert('Oooops! something went wrong, please refresh the page');
+                document.getElementById("form").reset();
 
             }
         );
     return false; // To block from loading a new page
-
-
 }
-
-function clearForm($form) {
-    $form.find(':input').not(':button, :submit, :reset, :hidden, :checkbox, :radio').val('');
-    $form.find(':checkbox, :radio').prop('checked', false);
-}
-
-
-//animate buttonvar animateButton = function(e) {
