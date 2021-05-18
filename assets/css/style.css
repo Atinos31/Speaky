@@ -12,9 +12,9 @@ body {
     background-color: #f6f8f5;
     color: #333;
     min-height: 100vh;
-    margin: 0;
     font-family: 'Lato', sans-serif;
     overflow: auto;
+    margin: 0;
 }
 
 textarea {
@@ -282,8 +282,8 @@ main {
 .box.active {
     color: #fff;
     background: green;
-    box-shadow: 0 0 0 5px #fff, 0 0 0 10px rgb(200, 247, 73);
-    transform: scale(1.1);
+    box-shadow: 0 0 0 5px #fff, 0 0 0 11px green;
+    transform: scale(0.9);
     cursor: pointer;
 }
 

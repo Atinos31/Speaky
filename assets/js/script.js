@@ -139,7 +139,7 @@ function setTextMessage(text) {
 function speakText() {
     speechSynthesis.speak(message);
 }
-//Line 35, 36 causes voice list duplication
+//causes voice list duplication
 getVoices();
 if (speechSynthesis.onvoiceschanged !== undefined) {
     speechSynthesis.onvoiceschanged = getVoices;
