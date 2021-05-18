@@ -331,9 +331,7 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
     .btn-success {
-        display: block;
         margin: 0 auto;
-        margin-top: 20px;
         padding: 14px 35px;
     }
     .type-area {
