@@ -4,7 +4,7 @@ const speechSynthesis = window.speechSynthesis;
 // DOM Elements
 const textForm = document.querySelector('form');
 const textInput = document.querySelector('#textInput');
-const voiceSelect = document.querySelector('#voice-select');
+const voiceSelect = document.querySelector('#voiceSelect');
 const main = document.querySelector('main');
 const textarea = document.getElementById('text');
 const readBtn = document.getElementById('read');
@@ -90,9 +90,9 @@ function createBox(item) {
         setTextMessage(text);
         speakText();
 
-        //adding active effect/class thats is style in css, to the image box
+        //adding active effect/class thats is styleD in css, to the image box
         box.classList.add('active');
-        //remove the  active class right after it been clicked or used
+        //removal of  the  active class right after it's been clicked or used
         setTimeout(() => box.classList.remove('active'), 1000);
 
     });
