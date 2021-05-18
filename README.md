@@ -176,6 +176,7 @@ As part of the design process, before starting the project i made initial wirefr
 
 ## Future Features
 1. In the future , the app can have different languages implemented.
+2. make it more compartible on iphones.
 
 
 ## [Technologies Used](#technologies-used)
@@ -211,29 +212,30 @@ As part of the design process, before starting the project i made initial wirefr
 # [Testing](#testing)
   ## [Functionality Testing](#functionality-testing)
   
-   -  The app was tested on Microsoft Edge, Google Chrome, mozilla firefox and safari
-   -   The app was viewed on a variety of devices such as desktop, laptop and mobile
+   -  The app was tested on Microsoft Edge, Google Chrome, mozilla firefox.
+   -   The app was viewed on a variety of devices such as galaxy S9/S9 + Android 7.0, Ipad ,Iphones 6/7/8 IOS 11, Iphones 6/7/8  plus IOS 11, Iphones X/XS IOS 12.
    -   Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
    
   ## [Compartibility Testing](#compartibility-testing)
   - tested on Microsoft Edge, great compartiibility.
   - works fine on Google chrome and mozilla firefox.
-  - Tested on iphone8 -not compartible.
+  - Tested on iphone8 -not so compartible. choose voice toggle button and speak button sont wwork but image and out audio wotk perfectly.
 
   ## Code Validation
    The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
    -   [W3C Jigsaw html validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Results](https://validator.w3.org/nu/#textarea) 
    -   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Result](assets/images/validated-css.png)
-   -   [Jslint](https://www.jslint.com/) - [no major warning]()
+   -   [Jslint](https://www.jslint.com/) - [no major warnings]()
 
    ### [User stories testing](#user-stories-testing)
    - A user can choose the preferred voice to use with the app.
    - A user can type their emotion and in return get an audio feeback.
    - A user can tap on the images and in return get an audio feedback with each specific image.
-   - A user can leave feedback.
+   - A user may leave us some feedback .
   ### [Performance Testing](#performance-testing)
-    - I ran [lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check for performance, accesibility, SEO and best paractices.
+   - I ran [lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check for performance, accesibility, SEO and best paractices.
+   - Accessibility and SE0 
 
 
 ### [Known Bugs](#known-bugs)
@@ -297,7 +299,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -    [W3schhool](https://www.w3schools.com/default.asp)
 
--    [StackOverflow posts](https://stackoverflow.com) 
+-    [StackOverflow posts](https://stackoverflow.com) for extensive research.
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
