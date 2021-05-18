@@ -175,7 +175,7 @@ const speak = () => {
 
     // Speak error
     speakText.onerror = e => {
-        alert('Something went wrong, please refresh the page');
+        // alert('Something went wrong, please refresh the page');
     };
 
     // Selected voice
