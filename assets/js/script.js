@@ -161,24 +161,13 @@ if (isChrome) {
 const speak = () => {
     // Check if speaking
     if (speechSynthesis.speaking) {
-        console.log('Already speaking...');
+        //console.log('Already speaking...');
         return;
     }
 
     // Get speak text
     const speakText = new SpeechSynthesisUtterance(textInput.value);
 
-
-    // Speak end
-    speakText.onend = e => {
-        console.log('Done speaking...');
-
-    };
-
-    // Speak error
-    speakText.onerror = e => {
-        // alert('Something went wrong, please refresh the page');
-    };
 
     // Selected voice
     const selectedVoice = voiceSelect.selectedOptions[0].getAttribute(
@@ -221,7 +210,7 @@ closeBtn.addEventListener('click', () =>
 //read button functionality
 
 readBtn.addEventListener('click', () => {
-    setTextMessage(value);
+    setTextMessage(value); // left this error here as to avoid the two buttons overlapping when one is in speech mode.
     speakText();
 
 });

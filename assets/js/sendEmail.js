@@ -7,7 +7,7 @@ function sendForm(contactForm) {
         .then(
             function(response) {
                 //console.log('SUCCESS!', response.status, response.text);
-                alert('Your message has been sent');
+                alert('Your message has been sent!');
                 document.getElementById("form").reset();
 
 
