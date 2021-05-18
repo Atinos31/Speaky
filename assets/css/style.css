@@ -351,8 +351,8 @@ main {
         margin: 0 auto;
         padding: 12px 25px;
         float: right;
-        top: -55px;
-        left: 70px;
+        top: 0px;
+        left: 0px;
         position: relative;
     }
     .disclaimer {
@@ -380,49 +380,55 @@ main {
         grid-template-columns: 1fr;
     }
     .btn-success {
-        display: block;
-        margin-top: 23px;
+        top: 20px;
         font-size: 15px;
-        margin: 0 auto;
-    }
-    h1 {
-        font-size: 30px;
-        align-items: center;
-        padding-top: 30px;
-    }
-    .text-box {
-        min-width: 80%;
-        background-color: rgba(0, 0, 0, 0.7);
-        top: 8%;
-        height: 52vh;
-    }
-    .row {
-        min-height: 100%;
-        padding-bottom: 20px;
-    }
-    .logo span {
-        display: none;
-    }
-    .disclaimer {
-        display: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        float: none;
+        left: 10px;
+        padding: 14px 30px;
     }
 }
 
+h1 {
+    font-size: 30px;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.text-box {
+    min-width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 8%;
+    height: 52vh;
+}
+
+.row {
+    min-height: 100%;
+    padding-bottom: 20px;
+}
+
+.logo span {
+    display: none;
+}
+
+.disclaimer {
+    display: none;
+}
+
+
+}
 @media(max-width:414px) {
     .text-box {
         height: 54vh;
     }
 }
-
 @media(max-width:375px) {
     .text-box {
         height: 47vh;
     }
-}
-
-
-}
-
 }
 @media(max-width:375px) {
     .text-box {
