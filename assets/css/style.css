@@ -305,6 +305,10 @@ main {
     margin-bottom: 10px;
 }
 
+.text-muted {
+    margin-bottom: 0;
+}
+
 
 /* media queries*/
 
@@ -323,14 +327,14 @@ main {
     }
 }
 
-@media(max-width:800px) {
+@media(max-width:768px) {
     main {
         grid-template-columns: repeat(2, 1fr);
     }
     .btn-success {
         margin: 0 auto;
         padding: 14px 35px;
-        margin-top: 15px;
+        margin-top: 23px;
     }
     .type-area {
         text-align: center;
