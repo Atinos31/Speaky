@@ -139,6 +139,8 @@ function setTextMessage(text) {
 function speakText() {
     speechSynthesis.speak(message);
 }
+
+
 //causes voice list duplication
 getVoices();
 if (speechSynthesis.onvoiceschanged !== undefined) {
@@ -191,6 +193,7 @@ const speak = () => {
 
     // Speak
     speechSynthesis.speak(speakText);
+
 };
 
 // EVENT LISTENERS
