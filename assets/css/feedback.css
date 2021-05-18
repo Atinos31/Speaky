@@ -98,7 +98,7 @@
     }
     
     label {
-        text-align: left;
+        text-align: center;
     }
     
     legend {
@@ -257,7 +257,7 @@
         label {
             text-align: center;
         }
-        .btn-successs {
+        .btn-success {
             top: 20px;
             font-size: 15px;
             text-align: center;
