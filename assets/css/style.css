@@ -133,8 +133,15 @@ select:focus {
     margin-left: 8px;
 }
 
+.btn-success:hover {
+    color: #fff;
+    background: green;
+    box-shadow: 0 0 0 5px #fff, 0 0 0 10px green;
+    border: none;
+    outline: none;
+}
+
 .readbtn:hover,
-.btn-success:hover,
 .btn-toggle:hover {
     color: #fff;
     background: green;
