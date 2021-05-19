@@ -312,10 +312,16 @@
         }
         /* media queries*/
         
+        @media(min-width:1440px) {
+            .text-box {
+                max-height: 55vh;
+            }
+        }
+        
         @media (min-width:1100px) {
             .text-box {
                 transform: translate(-50%, -1000px);
-                height: 55vh;
+                min-height: 52vh;
             }
         }
         
@@ -325,7 +331,7 @@
             }
             .text-box {
                 transform: translate(-50%, -850px);
-                height: 50vh;
+                height: 47vh;
             }
         }
         
@@ -414,8 +420,12 @@
             }
         }
         
-        @media(max-width:375px) {
+        @media(max-width:360px) {
             .text-box {
-                height: 50vh;
+                min-height: 70vh;
+            }
+            .btn-success {
+                left: 0;
+                padding: 5px 35px;
             }
         }
