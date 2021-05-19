@@ -1,5 +1,5 @@
 function sendForm(contactForm) {
-    emailjs.send("service_xblehac", "template_imyx42d" {
+    emailjs.send("speaky", "template_imyx42d" {
             "from_name": contactForm.name.value,
             "from_email": contactForm.emailaddress.value,
             "message": contactForm.message.value
