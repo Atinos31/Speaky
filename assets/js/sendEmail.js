@@ -1,8 +1,8 @@
 function sendForm(contactForm) {
-    emailjs.send("gmail", "template_04ew0co", {
+    emailjs.send("service_xblehac", "template_imyx42d" {
             "from_name": contactForm.name.value,
             "from_email": contactForm.emailaddress.value,
-            "feedback_summary": contactForm.feedbacksummary.value
+            "message": contactForm.message.value
         })
         .then(
             function(response) {
@@ -12,7 +12,7 @@ function sendForm(contactForm) {
 
             },
             function(error) {
-                // alert('Oooops! something went wrong, please refresh the page');
+                alert('Oooops! something went wrong, please refresh the page');
                 //document.getElementById("form").reset(); //form reset
 
             }

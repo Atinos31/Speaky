@@ -21,9 +21,10 @@
     <title>Text to Speech app
     </title>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
         (function() {
-            emailjs.init("user_ypk2G1kkPoxjbWEmsTwIy");
+            emailjs.init("user_3HLEpZUiHHbG3FpN991vC");
         })();
     </script>
 </head>
@@ -44,7 +45,7 @@
     <!--form -->
     <section id="container">
         <div class="contact-bg">
-            <form onsubmit="return sendForm(this);" method="POST" id="form" name="contactForm">
+            <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
                 <div class="col-12 col-lg-6">
                     <fieldset>
                         <legend>
@@ -83,8 +84,8 @@
               </label>
                         </p>
                         <p>
-                            <label for="feedbacksummary">Comments:</label><br/>
-                            <textarea name="feedbacksummary" id="feedbacksummary" placeholder="write your message here..." required></textarea>
+                            <label for="message">Comments:</label><br/>
+                            <textarea name="message" id="message" placeholder="write your message here..." required></textarea>
                         </p>
                         <label>
             <input type="checkbox" name="subscribe" checked="checked"/> Sign me up for email updates
