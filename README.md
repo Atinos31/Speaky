@@ -222,7 +222,7 @@ As part of the design process, before starting the project i made initial wirefr
    -  Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
    
   ## [Compartibility Testing](#compartibility-testing)
-  - TEsted on Microsoft Edge, runs very well.
+  - Tested on Microsoft Edge, runs very well.
   - Works fine on Google chrome and mozilla firefox.
   - Tested on iphone8 and internet explorer-not so compatible.
 
@@ -244,10 +244,10 @@ As part of the design process, before starting the project i made initial wirefr
 
 
 ### [Known Bugs](#known-bugs)
- - submit button still needs to be reconfigured- *solved*
+ - submit button still needs to be reconfigured *solved*
  - responsiveness on desktop size screens.*solved*
  - choose voice btn/toggle btn and speak btn doesnt work on iphone8
- - confirmation pop up message after form validation and submit btn pressed, -added and a lert on promise *solved*
+ - confirmation pop up message after form validation and submit btn pressed, modal container used *solved*
  - onvoiceschanged not well incoporatated with the images and type area sections.
 # [Deployment](#depployment)
 
