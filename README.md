@@ -207,12 +207,12 @@ As part of the design process, before starting the project i made initial wirefr
     - visual studio code was used as a code editor
 9. [hover min css](https://ianlunn.github.io/Hover/)
    - hover min css was used as a hover effect on the social links in the footer.
-10. [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis):
-   - To handle voice data
+10. [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)
+    - To handle voice data
 11. [am i responsive](http://ami.responsivedesign.is/)
-  - This was used to generate the responvie mockups.
+    - This was used to generate the responvie mockups.
 12. [Email Js](https://www.emailjs.com/)
-  -  To send emails using client-side technology .
+    - To send emails using client-side technology .
   
 # [Testing](#testing)
   ## [Functionality Testing](#functionality-testing)
