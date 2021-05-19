@@ -384,7 +384,7 @@
             min-width: 80%;
             background-color: rgba(0, 0, 0, 0.7);
             top: 8%;
-            height: 52vh;
+            min-height: 52vh;
         }
         .row {
             min-height: 100%;
