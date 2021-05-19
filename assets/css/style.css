@@ -400,13 +400,13 @@
     
     @media(max-width:414px) {
         .text-box {
-            height: 54vh;
+            min-height: 54vh;
         }
     }
     
     @media(max-width:375px) {
         .text-box {
-            height: 47vh;
+            min-height: 47vh;
         }
     }
     
