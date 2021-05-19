@@ -1,10 +1,10 @@
 <h1 align="center">Speaky!</h1>
-<h2 align="center"> Interactive  Frontend Development  Milestone Project 2 for Code Institute.</h2>
+<h2 align="left"> Interactive  Frontend Development  Milestone Project 2 for Code Institute.</h2>
 
 
 
-Display from different screen shots![display from different screen shots](assets/images/mockup4.png)
-contact page mockup![display from different screen shots](assets/images/contactm.png)
+-*Display from different screen shots![display from different screen shots](assets/images/mockup4.png)*
+*Contact page mockup![display from different screen shots](assets/images/contactm2.png)*
 
 [👁 View the live project here.](https://atinos31.github.io/Speaky/)
 ---
@@ -14,7 +14,7 @@ Its main goal is to help families to better understand the basic needs and feeli
 
 * I used SpeechSynthesis interface of the Web Speech API to retrieve information about the synthesis voices available on the device.
 
-> Speech synthesis is accessed via the SpeechSynthesis interface, a text-to-speech component that allows programs to read out their text content (normally via the device's   default speech synthesiser.) Different voice types are represented by SpeechSynthesisVoice objects, and different parts of text that you want to be spoken are represented by  SpeechSynthesisUtterance objects. You can get these spoken by passing them to the SpeechSynthesis.speak() method.
+> Speech synthesis is accessed via the SpeechSynthesis interface, a text-to-speech component that allows programs to read out their text content (normally via the device's   default speech synthesizer.) Different voice types are represented by SpeechSynthesisVoice objects, and different parts of text that you want to be spoken are represented by  SpeechSynthesisUtterance objects. You can get these spoken by passing them to the SpeechSynthesis.speak() method.
 > 
 ### Browser support
 Support for Web Speech API speech synthesis is still getting there across mainstream browsers, and is currently limited to the following:
@@ -51,7 +51,7 @@ _Click [Here](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
-    - [Fuctionality](#functionality)
+    - [Functionality](#functionality)
     - [Compartibility](#compartibility)
     - [Code Validation](#code-validation)
     - [User Stories Testing](#user-stories-testing)
@@ -84,7 +84,7 @@ _Click [Here](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) 
 
 ### [Returning User Goals](#returning-user-goals)
 
-- As a returning visitor i want to be able to leave feedback regarding what improvements could be implemented.
+- As a returning visitor i want to be able to leave feedback regarding what improvements could be implemented and what i like about the app.
 
 ## [Website Structure](#website-structure)
   - The website is designed to be easy to navigate and user friendly on all device types but its mainly designed for  mobile and tablettes.
@@ -108,7 +108,7 @@ As part of the design process, before starting the project i made initial wirefr
 - Mobile wireframe ![mobile](assets/wireframes/mobile.png)
 - Tablette wireframes![tablette](assets/wireframes/tablette1.png)
 -  Desktop wireframe![desktop](assets/wireframes/desktop1.png)
--  Contact wireframe![desktop](assets/wireframes/contact1.png)
+-  Contact wireframe![desktop](assets/wireframes/contact5.png)
 
 
 
@@ -125,12 +125,12 @@ As part of the design process, before starting the project i made initial wirefr
  * The main font used throughout the site is 'Lato'. The font is clean and elegant, making it a good choice for web design.
 
 - I have used the 'Abril+Fatcae' font for titles and headers all over the site.
-
-- Sans Serif is set as the fallback font if for any reason the main fonts aren't being imported into the site correctly.
+- Kalam font comes close to a hand written font so i used for textarea in the main page and for textarea nad input fields in the contact us page.
+- Sans Serif is set as the fallback font if for any reason the main fonts aren't being imported onto the site correctly.
 
          
 ```html
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&family=Kalam:wght@400&display=swap">
 
 ```
 
@@ -152,10 +152,8 @@ As part of the design process, before starting the project i made initial wirefr
     - Clear interactive buttons used for a effortless user journey.
 
 ## Navigation Bar 
-*  The Navigation bar set to sticky position is visible at the top for each section, Its fully responsive and changes to a humburger menu once on mobile devices.
 * Navigation Scheme On the left side there is a logo and it can be used a nav link to the home section.
-* The header at the center top of the page and it is meant to be remain at a fixed position as the logo
-* The button to choose voice is on the right top of the page.
+* The toggle button  for users to choose voice is on the right top of the page.
 
 ## Main 
 ### The main are consists of two sections:
@@ -168,16 +166,17 @@ As part of the design process, before starting the project i made initial wirefr
 ## Footer
  The footer is positioned at the bottom of the page and it contains:
 
-  * feedback link - this leads to a new page with a form that can be filled to leave feedback.
-  * A speaky logo that leads back to the main page when clicked, although on small screens its set to display none and a link to go back to the home page is displayed.
-  * Social media links
+  * Contact us button - that opens with a form for users to provide feeback.
+  * Social media icons that opens on a separate page.
   * Copyright with a github link in that leads to a 404 error page.
 
 
 ## Future Features
-1. In the future , the app can have different languages implemented.
-2. make it more compartible on iphones.
+1. In the future , the app may have different languages implemented.
 
+2. find a well tested technology to use that is more compatible with several browsers and devices.
+
+3. Add more images with slide animation.
 
 ## [Technologies Used](#technologies-used)
 ### Languages Used
@@ -206,23 +205,25 @@ As part of the design process, before starting the project i made initial wirefr
     - visual studio code was used as a code editor
 8. [hover min css](https://ianlunn.github.io/Hover/)
    - hover min css was used as a hover effect on the social links in the footer.
-
-
-
+9. [CSS-tricks](https://css-tricks.com/)
+   - This site helped me with some solutions i needed.
+10. [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis): Web API Speech synthesis
+11. [am i responsive](http://ami.responsivedesign.is/)
+  - This was used to generate the responvie mockups.
 # [Testing](#testing)
   ## [Functionality Testing](#functionality-testing)
   
    -  The app was tested on Microsoft Edge, Google Chrome, mozilla firefox.
-   -   The app was viewed on a variety of devices such as galaxy S9/S9 + Android 7.0, Ipad ,Iphones 6/7/8 IOS 11, Iphones 6/7/8  plus IOS 11, Iphones X/XS IOS 12.
+   - Tested for responsiveness on iphone  and tablettes , runs fine.
    -   Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
    
   ## [Compartibility Testing](#compartibility-testing)
-  - tested on Microsoft Edge, great compartiibility.
-  - works fine on Google chrome and mozilla firefox.
-  - Tested on iphone8 -not so compartible. choose voice toggle button and speak button sont wwork but image and out audio wotk perfectly.
+  - TEsted on Microsoft Edge, runs very well.
+  - Works fine on Google chrome and mozilla firefox.
+  - Tested on iphone8 and internet explorer-not so compatible.
 
   ## Code Validation
-   The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+   The W3C Markup Validator and W3C CSS Validator Services were used to validate every file of the project to ensure there were no syntax errors in the project.
 
    -   [W3C Jigsaw html validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Results](https://validator.w3.org/nu/#textarea) 
    -   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Result](assets/images/validated-css.png)
@@ -235,15 +236,15 @@ As part of the design process, before starting the project i made initial wirefr
    - A user may leave us some feedback .
   ### [Performance Testing](#performance-testing)
    - I ran [lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check for performance, accesibility, SEO and best paractices.
-   - Accessibility and SE0 
+   ![lighthouse report](assets/images/lighthouse-report.png)
 
 
 ### [Known Bugs](#known-bugs)
  - submit button still needs to be reconfigured- *solved*
- - responsiveness on desktop size screens.
- - voicechange function not working on iphone8....more testing needed
- - confirmation pop up message after submit button pressed, having touble with that.- ## solved
- - select voices not well incoporatated with the images and type area sections.
+ - responsiveness on desktop size screens.*solved*
+ - choose voice btn/toggle btn and speak btn doesnt work on iphone8
+ - confirmation pop up message after form validation and submit btn pressed, -added and a lert on promise *solved*
+ - onvoiceschanged not well incoporatated with the images and type area sections.
 # [Deployment](#depployment)
 
    ### GitHub Pages
@@ -297,17 +298,17 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--    [W3schhool](https://www.w3schools.com/default.asp)
+-    [W3school tutorials](https://www.w3schools.com/default.asp)
 
--    [StackOverflow posts](https://stackoverflow.com) for extensive research.
+-    [StackOverflow posts](https://stackoverflow.com) 
 
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 
-- [MDN WEB DOCS](https://developer.mozilla.org/)
+
 
 ### [Acknowledgements](#acknowledgements)
 
 -   My Mentor for continuous helpful feedback.
--   Full stack Wattsapp group for the positive feeback and encouragement.
+-   Full stack Wattsapp group for the positive feedback and encouragement.
 -   Tutor support for encouraging me to look for the right solutions.
--   Peer code review chanel on Slack for constuctive criticism.
+-   Peer code review chanel on Slack for constructive criticism.
