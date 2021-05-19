@@ -173,7 +173,7 @@ select:focus {
 /* modal toggle box */
 
 .text-box {
-    max-width: 70%;
+    max-width: 50%;
     position: absolute;
     bottom: 40%;
     left: 50%;
