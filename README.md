@@ -225,9 +225,9 @@ As part of the design process, before starting the project i made initial wirefr
   ## Code Validation
    The W3C Markup Validator and W3C CSS Validator Services were used to validate every file of the project to ensure there were no syntax errors in the project.
 
-   -   [W3C Jigsaw html validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Results](https://validator.w3.org/nu/#textarea) 
-   -   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Result](assets/images/validated-css.png)
-   -   [Jslint](https://www.jslint.com/) - [no major warnings]()
+   -   [W3C Jigsaw html validator-index.html](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only))  ![passed Results](assets/images/index.png) 
+   -   [W3C CSS Validator-styles.css](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only))  ![passed Result](assets/images/css.png)
+   -   [Jslint](https://www.jslint.com/) - [No major errors]()
 
    ### [User stories testing](#user-stories-testing)
    - A user can choose the preferred voice to use with the app.
