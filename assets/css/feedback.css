@@ -140,7 +140,16 @@
             border: none;
             outline: none;
         }
-        /*FOOTER*/
+        /*MODAL*/
+        
+        .close {
+            background-color: green;
+        }
+        
+        .hide {
+            display: none;
+        }
+        /* FOOTER */
         
         .social-links a {
             margin-right: 7px;

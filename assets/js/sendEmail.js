@@ -1,21 +1,19 @@
-function sendForm(contactForm) {
-    emailjs.send("speaky", "template_imyx42d" {
-            "from_name": contactForm.name.value,
-            "from_email": contactForm.emailaddress.value,
-            "message": contactForm.message.value
-        })
-        .then(
-            function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-                alert('Your message has been sent!');
-                document.getElementById("form").reset();
-
-            },
-            function(error) {
-                alert('Oooops! something went wrong, please refresh the page');
-                //document.getElementById("form").reset(); //form reset
-
-            }
-        );
-    return false; // To block from loading a new page
-}
+$(document).ready(function() {
+    // code from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_submit_prevent customised to fit needs
+    $("#form").submit(function(event) {
+        event.preventDefault();
+        const serviceID = "speaky";
+        const templateID = "template_imyx42d";
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                //Display modal success
+                $('#myModal').removeClass("hide");
+                // alert(' Your message has been sent Successfully.')
+                $("#form")[0].reset();
+            }, () => {
+                //Display modal error
+                alert('Sorry, something went wrong, please refresh the page')
+                $("#form")[0].reset();
+            });
+    });
+});
