@@ -10,11 +10,10 @@ function sendForm(contactForm) {
                 alert('Your message has been sent!');
                 document.getElementById("form").reset();
 
-
             },
             function(error) {
-                alert('Oooops! something went wrong, please refresh the page');
-                document.getElementById("form").reset();
+                // alert('Oooops! something went wrong, please refresh the page');
+                //document.getElementById("form").reset(); //form reset
 
             }
         );

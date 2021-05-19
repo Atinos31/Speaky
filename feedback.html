@@ -20,7 +20,6 @@
     <link href="assets/css/feedback.css" rel="stylesheet">
     <title>Text to Speech app
     </title>
-    <link rel="stylesheet" href="assets/css/feedback.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script>
         (function() {
@@ -45,7 +44,7 @@
     <!--form -->
     <section id="container">
         <div class="contact-bg">
-            <form onsubmit="return sendForm(this);" method="POST" id="form" name="contact-form">
+            <form onsubmit="return sendForm(this);" method="POST" id="form" name="contactForm">
                 <div class="col-12 col-lg-6">
                     <fieldset>
                         <legend>
@@ -95,6 +94,7 @@
                     </fieldset>
                 </div>
             </form>
+        </div>
     </section>
     <div class="footer">
         <div class="row mt-5 text-center text-white ">
@@ -128,10 +128,9 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="></script>
-    <!-- jQuery library -->
-    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-    <script src="assets/js/sendEmail.js "></script>
+
+    <script src="assets/js/sendEmail.js"></script>
+
 </body>
 
 </html>
