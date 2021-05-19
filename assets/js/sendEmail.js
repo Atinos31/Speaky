@@ -1,12 +1,12 @@
 function sendForm(contactForm) {
-    emailjs.send("speaky", "template_imyx42d" {
+    emailjs.send("service_xblehac", "template_imyx42d" {
             "from_name": contactForm.name.value,
             "from_email": contactForm.emailaddress.value,
             "message": contactForm.message.value
         })
         .then(
             function(response) {
-                //console.log('SUCCESS!', response.status, response.text);
+                console.log('SUCCESS!', response.status, response.text);
                 alert('Your message has been sent!');
                 document.getElementById("form").reset();
 
