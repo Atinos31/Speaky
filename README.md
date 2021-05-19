@@ -214,8 +214,8 @@ As part of the design process, before starting the project i made initial wirefr
   ## [Functionality Testing](#functionality-testing)
   
    -  The app was tested on Microsoft Edge, Google Chrome, mozilla firefox.
-   - Tested for responsiveness on iphone  and tablettes , runs fine.
-   -   Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
+   - Tested for responsiveness on  various devices iphone5,iphone 6/7/8 plus ,ipad,ipad mini ,Nexas X5/X6   and PIXELS, runs fine.
+   -  Friends  were asked to review the app and documentation to point out any bugs and user experience issues.
    
   ## [Compartibility Testing](#compartibility-testing)
   - TEsted on Microsoft Edge, runs very well.
