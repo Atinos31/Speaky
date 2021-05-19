@@ -191,25 +191,29 @@ As part of the design process, before starting the project i made initial wirefr
 
 1. [Bootstrap 4.4.1:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
-2. [Google Fonts:](https://fonts.google.com/)
+2.[jQuery](https://code.jquery.com/) 
+    - used jquery to simply code used in emailjs file.
+3. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Fatface & Lato Web' font into the style.css file which is used on all pages throughout the project.
-3. [Font Awesome:](https://fontawesome.com/)
+4. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used For website logo to add icons for aesthetic and UX purposes.
-4. [GitHub:](https://github.com/)
+5. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-5. [Balsamiq:](https://balsamiq.com/)
+6. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes in the beginning of the design process.
-6. [canva](https://www.canva.com/)
+7. [canva](https://www.canva.com/)
     - Canva was used to create the color scheme.
-7. [Vsc](https://www.canva.com/)
+8. [Vsc](https://www.canva.com/)
     - visual studio code was used as a code editor
-8. [hover min css](https://ianlunn.github.io/Hover/)
+9. [hover min css](https://ianlunn.github.io/Hover/)
    - hover min css was used as a hover effect on the social links in the footer.
-9. [CSS-tricks](https://css-tricks.com/)
-   - This site helped me with some solutions i needed.
-10. [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis): Web API Speech synthesis
+10. [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis):
+   - To handle voice data
 11. [am i responsive](http://ami.responsivedesign.is/)
   - This was used to generate the responvie mockups.
+12. [Email Js](https://www.emailjs.com/)
+  -  To send emails using client-side technology .
+  
 # [Testing](#testing)
   ## [Functionality Testing](#functionality-testing)
   
@@ -225,9 +229,9 @@ As part of the design process, before starting the project i made initial wirefr
   ## Code Validation
    The W3C Markup Validator and W3C CSS Validator Services were used to validate every file of the project to ensure there were no syntax errors in the project.
 
-   -   [W3C Jigsaw html validator-index.html](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only))  ![passed Results](assets/images/index.png) 
-   -   [W3C CSS Validator-styles.css](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only))  ![passed Result](assets/images/css.png)
-   -   [Jslint](https://www.jslint.com/) - [No major errors]()
+   -   [W3C Jigsaw html validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Results](https://validator.w3.org/nu/#textarea) 
+   -   [W3C CSS Validator](http://jigsaw.w3.org/css-validator/check/referer (for HTML/XML document only)) - [passed Result](assets/images/validated-css.png)
+   -   [Jslint](https://www.jslint.com/) - [no major warnings]()
 
    ### [User stories testing](#user-stories-testing)
    - A user can choose the preferred voice to use with the app.
